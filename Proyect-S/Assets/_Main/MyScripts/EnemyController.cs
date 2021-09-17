@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
     {
         if (enemyAI.IsInSight(target) && enemy.CurrentHealth > 0)
         {
-            Debug.Log($"IsInSight is {enemyAI.IsInSight(target)}");
+            Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
             enemy.anim.SetBool("Walk", true);
             ///new method
             Vector3 dir = target.position - transform.position;
