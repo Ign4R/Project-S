@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float timerBetweenShootSet;
 
     ///----------------ENEMY COMPONENTS-------------------------///
-    private Enemy enemy;
+    private LifeController enemy;
     private EnemyAI enemyAI;
 
     ///---------------------STATS-------------------------------///
@@ -26,19 +26,21 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         enemyAI = GetComponent<EnemyAI>();
-        enemy = GetComponent<Enemy>();
+        enemy = GetComponent<LifeController>();
     }
     void Update()
     {
         if (enemyAI.IsInSight(target) && enemy.CurrentHealth > 0)
         {
-            Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-            enemy.anim.SetBool("Walk", true);
-            ///new method
-            Vector3 dir = target.position - transform.position;
-            dir.y = 0;
-            transform.rotation = Quaternion.LookRotation(dir);
-            transform.position += transform.forward * speed * Time.deltaTime;
+            if (!shootState)
+            {
+                //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
+                enemy.Anim.SetBool("Walk", true);
+                Vector3 dir = target.position - transform.position;
+                dir.y = 0;
+                transform.rotation = Quaternion.LookRotation(dir);
+                transform.position += transform.forward * speed * Time.deltaTime;
+            }
 
             #region timer
             if (timerBetweenShoot > 0)
@@ -51,31 +53,26 @@ public class EnemyController : MonoBehaviour
                 ///animacion
                 if (!shootState)
                 {
+                    enemy.Anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
                 }
                 if (timerToShoot <= 0)
                 {
-                    enemyAI.Shoot();
-                    //Debug.Log("Disparo");
+                    //enemyAI.Shoot();
                     timerBetweenShoot = timerBetweenShootSet;
                     shootState = false;
                 }
-            }
-            if (timerToShoot <= 0 && enemy.CurrentHealth > 0)
-            {
-
             }
             #endregion
         }
         else if(!enemyAI.IsInSight(target))
         {
-            enemy.anim.SetBool("Walk", false);
+            enemy.Anim.SetBool("Walk", false);
         }
         if (timerToShoot > 0)
         {
             timerToShoot -= Time.deltaTime;
         }
-
     }
 }

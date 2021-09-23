@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] private int damage;
+    [SerializeField] private float shootY;
+    private Vector3 shootPosition;
     public float range = 10;
     public float angle = 90;
     public LayerMask mask;
@@ -13,6 +17,10 @@ public class EnemyAI : MonoBehaviour
     {
 
     }
+    private void Update()
+    {
+        shootPosition = new Vector3(transform.position.x, shootY, transform.position.z);
+    }
     public bool IsInSight(Transform target)
     {
         Vector3 diff = target.position - transform.position;
@@ -21,7 +29,6 @@ public class EnemyAI : MonoBehaviour
         Vector3 front = transform.forward;
         if (!InAngle(diff, front)) return false;
         if (!IsInView(diff.normalized, distance, mask)) return false;
-
 
         return true;
     }
@@ -42,7 +49,7 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, range);
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, transform.forward * range);
+        Gizmos.DrawRay(shootPosition, transform.forward * range);
         Gizmos.color = Color.green;
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, angle / 2, 0) * transform.forward * range);
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, -angle / 2, 0) * transform.forward * range);
@@ -51,14 +58,16 @@ public class EnemyAI : MonoBehaviour
 
     public void Shoot()
     {
+        Debug.Log("Disparo");
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+        if (Physics.Raycast(shootPosition, transform.forward, out hit, range))
         {
-
+            Debug.Log(hit.transform.name);
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log(hit.transform.name);
+                hit.collider.GetComponent<LifeController>().TakeDamage(damage);
             }
         }
     }

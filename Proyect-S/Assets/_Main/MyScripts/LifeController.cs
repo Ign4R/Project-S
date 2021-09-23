@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class LifeController : MonoBehaviour, IDamageable
 {
-    public Animator anim;
+    private Animator anim;
     public int CurrentHealth { get; private set; }
+    public Animator Anim { get => this.anim; set => this.anim = value; }
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class Enemy : MonoBehaviour, IDamageable
     }
     void Update()
     {
-        
+     
     }
     public void TakeDamage(int damage)
     {
@@ -30,10 +31,4 @@ public class Enemy : MonoBehaviour, IDamageable
            
         }
     }
-
-
-
-
-
-
 }

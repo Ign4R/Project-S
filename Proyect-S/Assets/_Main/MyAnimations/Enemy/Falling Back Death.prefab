@@ -670,7 +670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5d67901094cb4e81087b972889083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
 --- !u!136 &2131612870
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -714,8 +713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  timerToShootSet: 0
-  timerBetweenShootSet: 0
+  timerToShootSet: 1.16
+  timerBetweenShootSet: 4
   speed: 3
 --- !u!114 &162588262102893903
 MonoBehaviour:
@@ -729,6 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd013699addb3b41b89d1b4a428a89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 20
+  shootY: 1.5
   range: 10
   angle: 180
   mask:
