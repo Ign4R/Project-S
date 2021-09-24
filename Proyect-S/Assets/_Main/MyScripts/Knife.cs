@@ -9,10 +9,12 @@ public class Knife : MonoBehaviour
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
+    public GameObject particle;
     // Start is called before the first frame update
     void Start()
     {
         _audio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class Knife : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             _animator.SetTrigger("Attack");
+            
         }
     }
 
@@ -39,6 +42,7 @@ public class Knife : MonoBehaviour
             {
                 enemy.TakeDamage(100);
                 _audio.PlayOneShot(backstab, 0.7f);
+                particle.GetComponent<ParticleSystem>().Play();
             }
             else
             {
