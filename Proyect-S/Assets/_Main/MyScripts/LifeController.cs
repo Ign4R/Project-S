@@ -26,7 +26,7 @@ public class LifeController : MonoBehaviour, IDamageable
         {
             CurrentHealth = 0;
             Debug.Log($"{name} DIE");
-            anim.SetTrigger("Death");
+           // anim.SetTrigger("Death");
             //Destroy(gameObject);
            
         }
