@@ -37,7 +37,7 @@ public class Knife : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Enemy enemy = other.GetComponent<Enemy>();
+            IDamageable enemy = other.GetComponent<LifeController>();
             if (enemy != null)
             {
                 enemy.TakeDamage(100);

@@ -34,8 +34,6 @@ public class GrapplingHook : MonoBehaviour
     void Update()
     {
 
-
-
     }
 
     private void LateUpdate()
@@ -78,7 +76,6 @@ public class GrapplingHook : MonoBehaviour
         }
 
     }
-
 
 
     void StopGrapple()
