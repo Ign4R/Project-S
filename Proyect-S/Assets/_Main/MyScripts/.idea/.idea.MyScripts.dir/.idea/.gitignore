@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.MyScripts.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\UADE 2°AÑO\2C\4_PRODUCCIÓN DE VIDEOJUEGOS\proyect-s\Proyect-S\Assets\_Main\MyScripts\.idea\.idea.MyScripts.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

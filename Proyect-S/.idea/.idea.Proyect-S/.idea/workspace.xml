@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34a54ed4-ccf4-4cce-97b6-f6857133bb14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/demo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/demo.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/demoSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/demoSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/demoSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/demoSettings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/airport_concrete-1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/airport_concrete-1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/airport_concrete-1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/airport_concrete-1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_NORMAL.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_NORMAL.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_NORMAL.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_NORMAL.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_alpha.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_alpha.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_alpha.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_alpha.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_gloss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_gloss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_gloss.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_gloss.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_specular.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_specular.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_specular.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/jpgs/metal_fence-1_specular.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1_NORMAL.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1_NORMAL.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1_NORMAL.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1_NORMAL.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1_specular.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1_specular.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/metal_fence-1_specular.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/metal_fence-1_specular.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1_NORMAL.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1_NORMAL.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1_NORMAL.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1_NORMAL.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1_specular.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1_specular.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/Materials/panel-1_specular.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/panel-1_specular.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-1.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-1.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-1.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-1.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-2.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-2.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-2.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-2.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-3.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-3.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_barbwire-3.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_barbwire-3.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-1.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-1.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-1.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-1.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-2.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-2.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-2.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-2.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-3.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-3.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_group-3.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_group-3.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_single.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_single.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/chainlink_single.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/chainlink_single.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/floor-1.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/floor-1.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/models/floor-1.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/models/floor-1.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_barbwire-3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_barbwire-3.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_group-3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_group-3.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_single.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_single.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/prefabs/chainlink_single.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/prefabs/chainlink_single.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/profile.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/profile.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/profile.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/profile.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/profileSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/profileSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/profileSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/profileSettings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-03-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-03-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-03-21.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-03-21.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-22.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-22.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-34.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-04-34.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-10.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-10.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-45.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_12-05-45.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-32.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-32.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-49.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/Unity_2016-10-04_21-50-49.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_XLargeFacebook.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_XLargeFacebook.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_XLargeFacebook.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_XLargeFacebook.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_large.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_large.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_large.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_large.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_medium.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_medium.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_medium.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_medium.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_FenceChained/screenshots/_small.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Assets_FenceChained/screenshots/_small.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/Floor.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/Floor.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate2.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate2.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate3.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate3.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate4.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate4.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate5.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate5.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate6.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate6.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate7.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Materials/crate7.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Materials/crate7.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate3.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate4.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate4.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate5.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate5.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate6.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate6.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Crate7.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Crate7.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Prefabs/Floor.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Prefabs/Floor.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate1 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate1 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate1 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate1 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate1 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate1 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate1 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate1 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate2 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate2 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate2 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate2 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate2 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate2 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate2 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate2 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate3 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate3 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate3 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate3 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate3 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate3 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate3 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate3 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate4 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate4 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate4 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate4 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate4 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate4 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate4 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate4 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate5 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate5 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate5 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate5 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate5 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate5 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate5 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate5 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate6 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate6 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate6 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate6 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate6 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate6 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate6 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate6 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate7 color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate7 color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate7 color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate7 color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate7 normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate7 normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/crate7 normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/crate7 normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/floor color.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/floor color.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/floor color.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/floor color.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/floor normal.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/floor normal.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/Textures/floor normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/Textures/floor normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/models/Floor.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/models/Floor.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/models/Floor.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/models/Floor.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/models/crates.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/models/crates.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Metal Crates/models/crates.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Metal Crates/models/crates.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyScenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyScenes/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_basecolor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_basecolor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_basecolor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_basecolor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_roughness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_roughness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_roughness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Materials/Spotlight_roughness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Spotlight.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Spotlight.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/Spotlight.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/Spotlight.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/SpotlightStructure1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/SpotlightStructure1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/SpotlightStructure1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/SpotlightStructure1.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/SpotlightStructure2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/SpotlightStructure2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Assets/SpotlightStructure2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Assets/SpotlightStructure2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Info.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Info.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/DemoScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/DemoScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/DemoSceneSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/DemoSceneSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/DemoSceneSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/DemoSceneSettings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Main Camera Profile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Main Camera Profile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Materials/Showcase_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Materials/Showcase_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Materials/Showcase_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Materials/Showcase_mat.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Materials/_roughness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Materials/_roughness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpaceZeta_Spotlight/Scenes/Materials/_roughness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/SpaceZeta_Spotlight/Scenes/Materials/_roughness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Ceiling Fan Manual.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Ceiling Fan Manual.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Ceiling Fan Manual.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Ceiling Fan Manual.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Ceiling_Fan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Ceiling_Fan.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Ceiling_Fan.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Ceiling_Fan.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Demo Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Demo Scene.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_Demo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_Demo.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_DemoSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_DemoSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_DemoSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Demo Scene/Fan_DemoSettings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Materials/Ceiling_Fan_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Materials/Ceiling_Fan_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Materials/Ceiling_Fan_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Materials/Ceiling_Fan_mat.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Mesh.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Mesh.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Mesh/Ceiling_Fan_low_final.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Mesh/Ceiling_Fan_low_final.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Mesh/Ceiling_Fan_low_final.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Mesh/Ceiling_Fan_low_final.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Scripts/Fan_Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Scripts/Fan_Rotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Scripts/Fan_Rotation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Scripts/Fan_Rotation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tim's Assets/Probs/Ceiling Fan/Textures/Ceiling_Fan_low_Ceiling_Fan_mat_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Materials/Line005_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Materials/Line005_diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Materials/Line005_diffuse.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Materials/Line005_diffuse.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Models/Tower.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Models/Tower.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Models/Tower.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Models/Tower.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L1_diffuse.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L1_diffuse.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L1_diffuse.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L1_diffuse.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L2_normal.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L2_normal.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L2_normal.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L2_normal.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L3_specular.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L3_specular.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/Texture/L3_specular.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAssets/Tower/Texture/L3_specular.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Animator-Soldier.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Animator-Soldier.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Falling Back Death.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Falling Back Death.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Shoot/Shooting.dae.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Shoot/Shooting.dae.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Shoot/shoot-soldier.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyAnimations/Enemy/Shoot/shoot-soldier.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyPrefabs/player/FirstPersonController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyPrefabs/player/FirstPersonController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/LifeController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/GrapplingHook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/GrapplingHook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/Knife.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/Knife.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/MyScripts/LifeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/MyScripts/LifeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1yb0aTm2zy4m1GV1Nwb4ImTjSaa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1632505046198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632505046198</updated>
+      <workItem from="1632505054650" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
