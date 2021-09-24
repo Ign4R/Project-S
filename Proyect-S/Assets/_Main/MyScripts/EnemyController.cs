@@ -22,11 +22,15 @@ public class EnemyController : MonoBehaviour
     private bool shootState;
     private float timerBetweenShoot;
     private float timerToShoot;
+    private bool AudioTrigger = false;
+    public AudioClip alertSFX;
+    private AudioSource Audio;
 
     private void Awake()
     {
         enemyAI = GetComponent<EnemyAI>();
         enemy = GetComponent<Enemy>();
+        Audio = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -35,6 +39,13 @@ public class EnemyController : MonoBehaviour
             Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
             enemy.anim.SetBool("Walk", true);
             ///new method
+            
+            if (!AudioTrigger)
+            {
+                Audio.PlayOneShot(alertSFX, 0.3f);
+                AudioTrigger = true;
+            }
+
             Vector3 dir = target.position - transform.position;
             dir.y = 0;
             transform.rotation = Quaternion.LookRotation(dir);

@@ -6,11 +6,13 @@ public class Knife : MonoBehaviour
 {
     [SerializeField]
     Animator _animator;
+    public AudioClip wiff;
+    public AudioClip backstab;
+    private AudioSource _audio;
     // Start is called before the first frame update
     void Start()
     {
-      
-
+        _audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,9 +38,16 @@ public class Knife : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(100);
-
+                _audio.PlayOneShot(backstab, 0.7f);
             }
-
+            else
+            {
+                _audio.PlayOneShot(wiff, 0.7f);
+            }
+        }
+        else
+        {
+            _audio.PlayOneShot(wiff, 0.7f);
         }
     }
 

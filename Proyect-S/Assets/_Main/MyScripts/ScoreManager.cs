@@ -15,5 +15,4 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = $"{scoreIncrease}/3";
         scoreIncrease++;
     }
-
 }
