@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class LifeController : MonoBehaviour, IDamageable
 {
     public Animator anim;
     public int CurrentHealth { get; private set; }

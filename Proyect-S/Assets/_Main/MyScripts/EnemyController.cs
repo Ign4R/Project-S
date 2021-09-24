@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     ///----------------ENEMY COMPONENTS-------------------------///
     private LifeController enemy;
     private EnemyAI enemyAI;
+    private Animator anim;
 
     ///---------------------STATS-------------------------------///
     [SerializeField] private float speed;
@@ -33,6 +34,7 @@ public class EnemyController : MonoBehaviour
         Audio = GetComponent<AudioSource>();
 
         enemy = GetComponent<LifeController>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -47,15 +49,11 @@ public class EnemyController : MonoBehaviour
                 Audio.PlayOneShot(alertSFX, 0.3f);
                 AudioTrigger = true;
             }
-
-            Vector3 dir = target.position - transform.position;
-            dir.y = 0;
-            transform.rotation = Quaternion.LookRotation(dir);
-            transform.position += transform.forward * speed * Time.deltaTime;
+         
             if (!shootState)
             {
                 //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-                enemy.Anim.SetBool("Walk", true);
+                enemy.anim.SetBool("Walk", true);
                 Vector3 dir = target.position - transform.position;
                 dir.y = 0;
                 transform.rotation = Quaternion.LookRotation(dir);
@@ -88,7 +86,7 @@ public class EnemyController : MonoBehaviour
         }
         else if(!enemyAI.IsInSight(target))
         {
-            enemy.Anim.SetBool("Walk", false);
+            enemy.anim.SetBool("Walk", false);
         }
         if (timerToShoot > 0)
         {
