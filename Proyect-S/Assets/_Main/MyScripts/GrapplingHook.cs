@@ -40,10 +40,12 @@ public class GrapplingHook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            Physics.gravity = Vector3.zero;
             StartGrapple();
         }
         else if (Input.GetKeyUp(KeyCode.E))
         {
+            Physics.gravity = new Vector3(0f, -9.81f, 0f);
             StopGrapple();
 
         }
