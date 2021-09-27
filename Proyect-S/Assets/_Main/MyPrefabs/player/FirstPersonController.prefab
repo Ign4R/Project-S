@@ -407,6 +407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5d67901094cb4e81087b972889083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  deathSFX: {fileID: 0}
 --- !u!136 &902741735145732594
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -605,7 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 40
   distanceRange: 1
-  hookSpeed: 10
+  hookSpeed: 20
   toGrapple:
     serializedVersion: 2
     m_Bits: 0
@@ -1391,6 +1393,7 @@ MonoBehaviour:
   _animator: {fileID: 3558883434339835393}
   wiff: {fileID: 0}
   backstab: {fileID: 0}
+  particle: {fileID: 0}
 --- !u!65 &4462752407947372457
 BoxCollider:
   m_ObjectHideFlags: 0
