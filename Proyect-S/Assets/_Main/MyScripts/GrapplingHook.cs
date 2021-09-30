@@ -41,13 +41,14 @@ public class GrapplingHook : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             rb.velocity = Vector3.zero;
-            Physics.gravity = Vector3.zero;
+            
             StartGrapple();
         }
         else if (Input.GetKeyUp(KeyCode.E))
         {
             Physics.gravity = new Vector3(0f, -9.81f, 0f);
             rb.constraints = RigidbodyConstraints.None;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
             StopGrapple();
 
         }
@@ -77,7 +78,7 @@ public class GrapplingHook : MonoBehaviour
             grapplePoint = hit.point;
             hookDir = (grapplePoint - transform.position).normalized;
             hookLine.positionCount = 2;
-
+            Physics.gravity = Vector3.zero;
         }
 
     }
