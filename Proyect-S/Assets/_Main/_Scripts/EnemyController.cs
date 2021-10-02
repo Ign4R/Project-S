@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float timerBetweenShootSet;
 
     ///----------------ENEMY COMPONENTS-------------------------///
-    private LifeController enemy;
+    private LifeController lifeController;
     private EnemyAI enemyAI;
     private Animator anim;
 
@@ -33,31 +33,32 @@ public class EnemyController : MonoBehaviour
 
         Audio = GetComponent<AudioSource>();
 
-        enemy = GetComponent<LifeController>();
+        lifeController = GetComponent<LifeController>();
+
         anim = GetComponent<Animator>();
     }
     void Update()
     {
-        if (enemyAI.IsInSight(target) && enemy.CurrentHealth > 0)
+        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
         {
             Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-            enemy.anim.SetBool("Walk", true);
             ///new method
-            
+
             if (!AudioTrigger)
             {
                 Audio.PlayOneShot(alertSFX, 0.3f);
                 AudioTrigger = true;
             }
-         
+
             if (!shootState)
             {
                 //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-                enemy.anim.SetBool("Walk", true);
+                anim.SetBool("Walk", true);
                 Vector3 dir = target.position - transform.position;
                 dir.y = 0;
                 transform.rotation = Quaternion.LookRotation(dir);
                 transform.position += transform.forward * speed * Time.deltaTime;
+              
             }
 
             #region timer
@@ -71,7 +72,7 @@ public class EnemyController : MonoBehaviour
                 ///animacion
                 if (!shootState)
                 {
-                    enemy.anim.SetTrigger("Shoot");
+                    anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
                 }
@@ -84,9 +85,9 @@ public class EnemyController : MonoBehaviour
             }
             #endregion
         }
-        else if(!enemyAI.IsInSight(target))
+        else if (!enemyAI.IsInSight(target))
         {
-            enemy.anim.SetBool("Walk", false);
+           anim.SetBool("Walk", false);
         }
         if (timerToShoot > 0)
         {

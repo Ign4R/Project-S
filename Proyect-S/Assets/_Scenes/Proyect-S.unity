@@ -4843,14 +4843,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1704212242}
     m_Modifications:
+    - target: {fileID: 1307252637365536490, guid: 07a0140a586fece4882ba24ee0805339, type: 3}
+      propertyPath: range
+      value: 65.64
+      objectReference: {fileID: 0}
     - target: {fileID: 3224869764922312936, guid: 07a0140a586fece4882ba24ee0805339, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1181964131}
-    - target: {fileID: 3224869764922312936, guid: 07a0140a586fece4882ba24ee0805339, type: 3}
-      propertyPath: timerToShootSet
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8322696006580439684, guid: 07a0140a586fece4882ba24ee0805339, type: 3}
       propertyPath: m_RootOrder
       value: 0

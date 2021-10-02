@@ -871,8 +871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  timerToShootSet: 0
-  timerBetweenShootSet: 0
+  timerToShootSet: 2
+  timerBetweenShootSet: 2
   speed: 3
   alertSFX: {fileID: 8300000, guid: aecbf82096c422245a23eb30d5568336, type: 3}
 --- !u!114 &1307252637365536490
