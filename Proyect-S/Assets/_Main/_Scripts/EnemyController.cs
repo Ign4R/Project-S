@@ -71,15 +71,15 @@ public class EnemyController : MonoBehaviour
                 ///animacion
                 if (!shootState)
                 {
-                    //enemy.Anim.SetTrigger("Shoot");
+                    enemy.anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
-                    //shootState = true;
+                    shootState = true;
                 }
                 if (timerToShoot <= 0)
                 {
-                    //enemyAI.Shoot();
+                    enemyAI.Shoot();
                     timerBetweenShoot = timerBetweenShootSet;
-                    //shootState = false;
+                    shootState = false;
                 }
             }
             #endregion
