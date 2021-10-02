@@ -608,7 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 40
   distanceRange: 1
-  hookSpeed: 20
+  hookSpeed: 9
   toGrapple:
     serializedVersion: 2
     m_Bits: 0
