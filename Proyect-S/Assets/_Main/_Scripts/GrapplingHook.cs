@@ -39,9 +39,7 @@ public class GrapplingHook : MonoBehaviour
     private void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.E))
-        {
-            rb.velocity = Vector3.zero;
-            
+        {         
             StartGrapple();
         }
         else if (Input.GetKeyUp(KeyCode.E))
@@ -71,9 +69,11 @@ public class GrapplingHook : MonoBehaviour
 
     void StartGrapple()
     {
+
         RaycastHit hit;
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
         {
+            rb.velocity = Vector3.zero;
             check = true;
             grapplePoint = hit.point;
             hookDir = (grapplePoint - transform.position).normalized;
