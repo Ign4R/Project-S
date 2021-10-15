@@ -39,59 +39,56 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
+
         if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
         {
             Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-            ///new method
-
-            if (!AudioTrigger)
-            {
-                Audio.PlayOneShot(alertSFX, 0.3f);
-                AudioTrigger = true;
-            }
-
-            if (!shootState)
-            {
-                //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
+            if (Vector3.Distance(target.position, transform.position) > 2)
+            {               
                 anim.SetBool("Walk", true);
                 Vector3 dir = target.position - transform.position;
                 dir.y = 0;
                 transform.rotation = Quaternion.LookRotation(dir);
                 transform.position += transform.forward * speed * Time.deltaTime;
-              
             }
-
+        
+           
             #region timer
-            if (timerBetweenShoot > 0)
-            {
-                timerBetweenShoot -= Time.deltaTime;
-            }
-            else
-            {
+            //if (timerBetweenShoot > 0)
+            //{
+            //    timerBetweenShoot -= Time.deltaTime;
+            //}
+            //else
+            //{
 
-                ///animacion
-                if (!shootState)
-                {
-                    anim.SetTrigger("Shoot");
-                    timerToShoot = timerToShootSet;
-                    shootState = true;
-                }
-                if (timerToShoot <= 0)
-                {
-                    enemyAI.Shoot();
-                    timerBetweenShoot = timerBetweenShootSet;
-                    shootState = false;
-                }
-            }
+            //    ///animacion
+            //    if (!shootState)
+            //    {
+            //        anim.SetTrigger("Shoot");
+            //        timerToShoot = timerToShootSet;
+            //        shootState = true;
+            //    }
+            //    if (timerToShoot <= 0)
+            //    {
+            //        enemyAI.Shoot();
+            //        timerBetweenShoot = timerBetweenShootSet;
+            //        shootState = false;
+            //    }
+            //}
             #endregion
         }
         else if (!enemyAI.IsInSight(target))
         {
            anim.SetBool("Walk", false);
         }
-        if (timerToShoot > 0)
+        if (Vector3.Distance(target.position, transform.position) < 2)
         {
-            timerToShoot -= Time.deltaTime;
+            shootState = true;
+            print("ATACA");
         }
+        //if (timerToShoot > 0)
+        //{
+        //    timerToShoot -= Time.deltaTime;
+        //}
     }
 }
