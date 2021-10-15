@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class FileController : MonoBehaviour
 {
-    public ScoreManager scoreManager;
     public AudioClip collectableSFX;
     private AudioSource Audio;
 
@@ -15,7 +14,7 @@ public class FileController : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            scoreManager.AddScore();
+            ScoreManager.Instance.AddScore();
             Audio.PlayOneShot(collectableSFX, 1f);
             gameObject.SetActive(false);
         }
