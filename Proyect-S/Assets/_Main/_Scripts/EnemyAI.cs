@@ -78,7 +78,7 @@ public class EnemyAI : MonoBehaviour
         if (Physics.Raycast(shootPosition, transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            if (hit.collider.CompareTag("Player"))
+            if ((targetMask & 1 << hit.collider.gameObject.layer) != 0)
             {
                 Debug.Log(hit.transform.name);
                 hit.collider.GetComponent<LifeController>().TakeDamage(damage);

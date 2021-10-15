@@ -14,13 +14,11 @@ public class LifeController : MonoBehaviour, IDamageable
     void Start()
     {
         CurrentHealth = 100;
-        anim = GetComponent<Animator>();
         Audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
-        
     }
     public void TakeDamage(int damage)
     {
@@ -31,7 +29,7 @@ public class LifeController : MonoBehaviour, IDamageable
             CurrentHealth = 0;
             Debug.Log($"{name} DIE");
             anim.SetTrigger("Death");
-            rb.constraints = RigidbodyConstraints.FreezePosition;
+            //rb.constraints = RigidbodyConstraints.FreezePosition;
             rb.isKinematic = true;
 
             if (!AudioTrigger)

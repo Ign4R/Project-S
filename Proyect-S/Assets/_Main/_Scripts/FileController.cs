@@ -12,7 +12,7 @@ public class FileController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Damageable")
         {
             ScoreManager.Instance.AddScore();
             Audio.PlayOneShot(collectableSFX, 1f);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageableCollider : MonoBehaviour
 {
-
+    [SerializeField] private int damage;
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
@@ -30,7 +30,7 @@ public class DamageableCollider : MonoBehaviour
             IDamageable damageable = other.GetComponent<LifeController>();
             if (damageable != null)
             {
-                damageable.TakeDamage(100);
+                damageable.TakeDamage(damage);
                 _audio.PlayOneShot(backstab, 0.7f);
                 //particle.GetComponent<ParticleSystem>().Play();
             }

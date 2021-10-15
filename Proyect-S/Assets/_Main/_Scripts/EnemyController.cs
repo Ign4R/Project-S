@@ -19,11 +19,15 @@ public class EnemyController : MonoBehaviour
 
     ///---------------------STATS-------------------------------///
     [SerializeField] private float speed;
-    ///---------------------****------------------------------///
+    ///
+    ///---------------------BOOLS------------------------------///
     private bool shootState;
+    private bool AudioTrigger = false;
+    private bool chase;
+    /// 
     private float timerBetweenShoot;
     private float timerToShoot;
-    private bool AudioTrigger = false;
+
     public AudioClip alertSFX;
     private AudioSource Audio;
 
@@ -39,10 +43,11 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
-        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
+
+        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0 || chase && lifeController.CurrentHealth > 0)
         {
-            Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-            ///new method
+            chase = true;       
+            //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
 
             if (!AudioTrigger)
             {
@@ -53,9 +58,9 @@ public class EnemyController : MonoBehaviour
             if (!shootState && !enemyAI.IsInMinimalDistance(target))
             {
                 //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
-                anim.SetBool("Walk", true);
                 Vector3 dir = target.position - transform.position;
                 dir.y = 0;
+                anim.SetBool("Walk", true);
                 transform.rotation = Quaternion.LookRotation(dir);
                 transform.position += transform.forward * speed * Time.deltaTime;
             }
@@ -64,7 +69,7 @@ public class EnemyController : MonoBehaviour
                 anim.SetBool("Walk", false);
             }
 
-            #region timer
+            #region Timer
             if (timerBetweenShoot > 0)
             {
                 timerBetweenShoot -= Time.deltaTime;
@@ -73,15 +78,17 @@ public class EnemyController : MonoBehaviour
             {
 
                 ///animacion
-                if (!shootState)
+                if (!shootState && enemyAI.IsInSight(target))
                 {
+
                     anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
+
                 }
                 if (timerToShoot <= 0)
                 {
-                    //enemyAI.Shoot();
+                   
                     timerBetweenShoot = timerBetweenShootSet;
                     shootState = false;
                 }
@@ -99,4 +106,5 @@ public class EnemyController : MonoBehaviour
         }
         anim.SetBool("Aim", enemyAI.IsInMinimalDistance(target));
     }
+
 }
