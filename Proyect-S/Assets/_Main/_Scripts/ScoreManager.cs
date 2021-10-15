@@ -4,12 +4,17 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    private Text scoreText;
     private int scoreIncrease = 1;
     private int totalScore;
     private LifeController lifeController;
     private bool starTimer;
+    [SerializeField] private GameObject gameOver;
+    [SerializeField] private GameObject misionCheckmark;
+    [SerializeField] private GameObject infoText;
+    [SerializeField] private GameObject filesText;
+    [SerializeField] private GameObject scoreText;
     [SerializeField] private GameObject timerText;
+    [SerializeField] private GameObject misionText;
     [SerializeField] private float timeValue = 90;
     [SerializeField] private int filesQuantity;
     [SerializeField] private GameObject player;
@@ -17,9 +22,8 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        scoreText = GetComponent<Text>();
         lifeController = player.GetComponent<LifeController>();
-        scoreText.text = $"{totalScore}/{filesQuantity}";
+        scoreText.GetComponent<Text>().text = $"{totalScore}/{filesQuantity}";
     }
 
     private void Update()
@@ -40,7 +44,8 @@ public class ScoreManager : MonoBehaviour
             if(timeValue <= 0)
             {
                 timeValue = 0;
-                SceneManager.LoadScene(2);
+                gameOver.SetActive(true);
+                
             }
 
             DisplayTime(timeValue);
@@ -49,12 +54,19 @@ public class ScoreManager : MonoBehaviour
         if(totalScore == filesQuantity)
         {
             starTimer = true;
+            infoText.SetActive(false);
+            filesText.SetActive(false);
+            scoreText.SetActive(false);
+            misionCheckmark.SetActive(true);
+            misionText.SetActive(true);
             timerText.SetActive(true);
+            
         }
 
         if(lifeController.CurrentHealth <= 0)
         {
-            SceneManager.LoadScene(2);
+            gameOver.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -73,7 +85,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         totalScore += scoreIncrease;
-        scoreText.text = $"{totalScore}/{filesQuantity}";
+        scoreText.GetComponent<Text>().text = $"{totalScore}/{filesQuantity}";
         
     }
 }
