@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 6551232675000477718}
   m_Layer: 0
   m_Name: Soldier
-  m_TagString: Enemy
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -871,8 +871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  timerToShootSet: 2
-  timerBetweenShootSet: 2
+  timerToShootSet: 1
+  timerBetweenShootSet: 3
   speed: 3
   alertSFX: {fileID: 8300000, guid: aecbf82096c422245a23eb30d5568336, type: 3}
 --- !u!114 &1307252637365536490
@@ -889,7 +889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   shootY: 0
-  range: 8
+  range: 10
+  minimalRange: 5
   angle: 220
   mask:
     serializedVersion: 2

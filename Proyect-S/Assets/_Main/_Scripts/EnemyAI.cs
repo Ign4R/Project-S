@@ -7,9 +7,10 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private float shootY;
-    private Vector3 shootPosition;
-    public float range = 10;
-    public float angle = 90;
+    [SerializeField] private float range = 10;
+    [SerializeField] private float minimalRange = 5;
+    [SerializeField] private float angle = 90;
+    private Vector3 shootPosition;    
     public LayerMask mask;
     public LayerMask targetMask;
     //Implementar
@@ -33,11 +34,22 @@ public class EnemyAI : MonoBehaviour
         return true;
     }
 
+    public bool IsInMinimalDistance(Transform target)
+    {
+        Vector3 diff = target.position - transform.position;
+        float distance = diff.magnitude;
+        if (distance > minimalRange) return false;
+        
+        return true;
+    }
+
     bool InAngle(Vector3 from, Vector3 to)
     {
         float angleToTarget = Vector3.Angle(from, to);
         return angleToTarget < angle / 2;
     }
+
+   
 
     bool IsInView(Vector3 dirToTarget, float distance, LayerMask mask)
     {
@@ -48,6 +60,8 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, minimalRange);
         Gizmos.color = Color.red;
         Gizmos.DrawRay(shootPosition, transform.forward * range);
         Gizmos.color = Color.green;

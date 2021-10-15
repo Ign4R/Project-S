@@ -323,10 +323,9 @@ GameObject:
   - component: {fileID: 902741735145732599}
   - component: {fileID: 3558883435599479965}
   - component: {fileID: 3558883435279581284}
-  - component: {fileID: 2094353407}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,12 +467,12 @@ MonoBehaviour:
   zoomFOV: 30
   zoomStepTime: 5
   playerCanMove: 1
-  walkSpeed: 5
+  walkSpeed: 8
   maxVelocityChange: 10
   enableSprint: 1
   unlimitedSprint: 0
   sprintKey: 304
-  sprintSpeed: 7.37
+  sprintSpeed: 13
   sprintDuration: 5
   sprintCooldown: 5
   sprintFOV: 80
@@ -619,25 +618,6 @@ MonoBehaviour:
   force: 0
   forceMultiplier: 0
   velocityForce: 0
---- !u!95 &2094353407
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902741735145732605}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &902741735307954027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a848c0fd497224bb78e8a8d3063437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 3558883434339835393}
   wiff: {fileID: 8300000, guid: 1af05f48ff469ec44aa909e455b56d83, type: 3}
   backstab: {fileID: 8300000, guid: 1bb2f54ebba721440a511dba7f4f0e6d, type: 3}
   particle: {fileID: 0}
