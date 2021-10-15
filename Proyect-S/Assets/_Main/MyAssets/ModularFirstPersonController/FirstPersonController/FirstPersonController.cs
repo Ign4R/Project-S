@@ -17,6 +17,7 @@ using UnityEngine.UI;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
+    private Animator _animator;
 
     #region Camera Movement Variables
 
@@ -135,6 +136,8 @@ public class FirstPersonController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
+        _animator = GetComponentInChildren<Animator>();
+
         crosshairObject = GetComponentInChildren<Image>();
 
         // Set internal variables
@@ -151,7 +154,8 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        if(lockCursor)
+        
+        if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -202,10 +206,21 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("Aprete click derecho");
+            _animator.SetTrigger("Attack");
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            _animator.SetTrigger("Attack");
+
+        }
         #region Camera
 
         // Control camera movement
-        if(cameraCanMove)
+        if (cameraCanMove)
         {
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 

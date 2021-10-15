@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knife : MonoBehaviour
+public class DamageableCollider : MonoBehaviour
 {
-    [SerializeField]
-    Animator _animator;
+
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
@@ -20,27 +19,18 @@ public class Knife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Debug.Log("Aprete click derecho");
-            _animator.SetTrigger("Attack");
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            _animator.SetTrigger("Attack");
-            
-        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Damageable")
         {
-            IDamageable enemy = other.GetComponent<LifeController>();
-            if (enemy != null)
+            print("hize daño");
+            IDamageable damageable = other.GetComponent<LifeController>();
+            if (damageable != null)
             {
-                enemy.TakeDamage(100);
+                damageable.TakeDamage(100);
                 _audio.PlayOneShot(backstab, 0.7f);
                 //particle.GetComponent<ParticleSystem>().Play();
             }

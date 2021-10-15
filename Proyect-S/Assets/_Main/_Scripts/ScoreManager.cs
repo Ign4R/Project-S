@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
     private int totalScore;
     private LifeController lifeController;
     private bool starTimer;
+
     [SerializeField] private GameObject timerText;
     [SerializeField] private float timeValue = 90;
     [SerializeField] private int filesQuantity;
