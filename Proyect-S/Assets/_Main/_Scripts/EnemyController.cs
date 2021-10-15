@@ -97,5 +97,6 @@ public class EnemyController : MonoBehaviour
         {
             timerToShoot -= Time.deltaTime;
         }
+        anim.SetBool("Aim", enemyAI.IsInMinimalDistance(target));
     }
 }
