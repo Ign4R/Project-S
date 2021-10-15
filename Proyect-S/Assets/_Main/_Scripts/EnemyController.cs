@@ -50,7 +50,7 @@ public class EnemyController : MonoBehaviour
                 AudioTrigger = true;
             }
 
-            if (!shootState)
+            if (!shootState && !enemyAI.IsInMinimalDistance(target))
             {
                 //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
                 anim.SetBool("Walk", true);
@@ -58,7 +58,10 @@ public class EnemyController : MonoBehaviour
                 dir.y = 0;
                 transform.rotation = Quaternion.LookRotation(dir);
                 transform.position += transform.forward * speed * Time.deltaTime;
-              
+            }
+            else
+            {
+                anim.SetBool("Walk", false);
             }
 
             #region timer
@@ -78,7 +81,7 @@ public class EnemyController : MonoBehaviour
                 }
                 if (timerToShoot <= 0)
                 {
-                    enemyAI.Shoot();
+                    //enemyAI.Shoot();
                     timerBetweenShoot = timerBetweenShootSet;
                     shootState = false;
                 }
@@ -88,6 +91,7 @@ public class EnemyController : MonoBehaviour
         else if (!enemyAI.IsInSight(target))
         {
            anim.SetBool("Walk", false);
+           shootState = false;
         }
         if (timerToShoot > 0)
         {
