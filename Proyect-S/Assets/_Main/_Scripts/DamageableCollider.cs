@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageableCollider : MonoBehaviour
 {
     [SerializeField] private int damage;
+    [SerializeField] private LayerMask _hittableMask;
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
@@ -21,12 +22,11 @@ public class DamageableCollider : MonoBehaviour
     {
        
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Damageable")
+        if ((_hittableMask & 1 << other.gameObject.layer) != 0)
         {
-            print("hize daño");
+           
             IDamageable damageable = other.GetComponent<LifeController>();
             if (damageable != null)
             {

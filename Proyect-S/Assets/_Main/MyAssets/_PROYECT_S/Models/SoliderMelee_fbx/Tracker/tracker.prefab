@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8656897316377217446}
   - component: {fileID: 2152162791432734414}
   - component: {fileID: 6817864869542716401}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0152966175, y: 0.07179545, z: 0.14790735}
-  m_Center: {x: 0.0000037250982, y: 0.00058950385, z: 0.11082229}
+  m_Size: {x: 0.015296564, y: 0.07179544, z: 0.29899505}
+  m_Center: {x: 0.000007626293, y: 0.00058900187, z: 0.035277933}
 --- !u!114 &6817864869542716401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a848c0fd497224bb78e8a8d3063437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 30
+  _hittableMask:
+    serializedVersion: 2
+    m_Bits: 64
   wiff: {fileID: 0}
   backstab: {fileID: 0}
   particle: {fileID: 0}

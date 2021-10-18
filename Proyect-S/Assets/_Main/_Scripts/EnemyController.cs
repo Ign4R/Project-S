@@ -23,7 +23,6 @@ public class EnemyController : MonoBehaviour
     ///---------------------BOOLS------------------------------///
     private bool shootState;
     private bool AudioTrigger = false;
-    private bool chase;
     /// 
     private float timerBetweenShoot;
     private float timerToShoot;
@@ -41,13 +40,16 @@ public class EnemyController : MonoBehaviour
 
         anim = GetComponent<Animator>();
     }
+    private void Start()
+    {
+        
+    }
     void Update()
     {
 
-        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0 /*|| chase && lifeController.CurrentHealth > 0*/)
+        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
         {
-            chase = true;
-            //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
+           
 
             if (!AudioTrigger)
             {
@@ -63,7 +65,7 @@ public class EnemyController : MonoBehaviour
 
                 if (!enemyAI.IsInMinimalDistance(target))
                 {
-                    //Debug.Log($"IsInSight is {enemyAI.IsInSight(target)} from {gameObject.name}");
+                    
                     anim.SetBool("Walk", true);
                     transform.position += transform.forward * speed * Time.deltaTime;
                 }
@@ -85,7 +87,6 @@ public class EnemyController : MonoBehaviour
             else
             {
 
-                ///animacion
                 if (!shootState && enemyAI.IsInSight(target))
                 {
                     anim.SetTrigger("Shoot");
@@ -110,6 +111,6 @@ public class EnemyController : MonoBehaviour
         {
             timerToShoot -= Time.deltaTime;
         }
-        //anim.SetBool("Aim", enemyAI.IsInMinimalDistance(target));
+
     }
 }

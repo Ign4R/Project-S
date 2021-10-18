@@ -10,10 +10,11 @@ public class LifeController : MonoBehaviour, IDamageable
     private AudioSource Audio;
     private bool AudioTrigger = false;
     private Rigidbody rb;
-
+    private Collider coll;
     void Start()
     {
         CurrentHealth = 100;
+        coll = GetComponent<Collider>();
         Audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
@@ -23,13 +24,11 @@ public class LifeController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         CurrentHealth -= damage;
-        Debug.Log($"{name} has {CurrentHealth} health");
         if (CurrentHealth <= 0)
         {
+            coll.enabled = false;
             CurrentHealth = 0;
-            Debug.Log($"{name} DIE");
             anim.SetTrigger("Death");
-            //rb.constraints = RigidbodyConstraints.FreezePosition;
             rb.isKinematic = true;
 
             if (!AudioTrigger)
