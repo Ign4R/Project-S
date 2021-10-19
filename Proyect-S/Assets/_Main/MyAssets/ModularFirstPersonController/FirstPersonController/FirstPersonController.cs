@@ -208,7 +208,6 @@ public class FirstPersonController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("Aprete click derecho");
             _animator.SetTrigger("Attack");
         }
 

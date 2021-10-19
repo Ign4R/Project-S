@@ -72,15 +72,12 @@ public class EnemyAI : MonoBehaviour
 
     public void Shoot()
     {
-        Debug.Log("Disparo");
         RaycastHit hit;
 
         if (Physics.Raycast(shootPosition, transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
             if ((targetMask & 1 << hit.collider.gameObject.layer) != 0)
             {
-                Debug.Log(hit.transform.name);
                 hit.collider.GetComponent<LifeController>().TakeDamage(damage);
             }
         }
