@@ -1,106 +1,106 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'es' Physical Memory: 16311 MB
+OS: 'Windows 10 Pro; OS build 19042.1288; Version 2009; 64bit' Language: 'es' Physical Memory: 15763 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\2020.3.17f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/UADE/Materias/Cursando/Produccion de Videojuegos/Proyect S/Proyect-S/Proyect-S
+F:/UADE 2°AÑO/2C/4_PRODUCCIÓN DE VIDEOJUEGOS/proyect-s/Proyect-S
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57310
-Successfully changed project path to: D:/UADE/Materias/Cursando/Produccion de Videojuegos/Proyect S/Proyect-S/Proyect-S
-D:/UADE/Materias/Cursando/Produccion de Videojuegos/Proyect S/Proyect-S/Proyect-S
+58887
+Successfully changed project path to: F:/UADE 2°AÑO/2C/4_PRODUCCIÓN DE VIDEOJUEGOS/proyect-s/Proyect-S
+F:/UADE 2°AÑO/2C/4_PRODUCCIÓN DE VIDEOJUEGOS/proyect-s/Proyect-S
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path C:/Program Files/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/UADE/Materias/Cursando/Produccion de Videojuegos/Proyect S/Proyect-S/Proyect-S/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/UADE 2°AÑO/2C/4_PRODUCCIÓN DE VIDEOJUEGOS/proyect-s/Proyect-S/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f07)
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1636)
     Vendor:   
-    VRAM:     8031 MB
-    Driver:   27.21.14.5671
+    VRAM:     7881 MB
+    Driver:   27.20.1034.6
 Initialize mono
-Mono path[0] = 'C:/Program Files/2020.3.17f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002497 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001829 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 36.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.938 seconds
+- Completed reload, in  1.043 seconds
 Domain Reload Profiling:
-	ReloadAssembly (938ms)
-		BeginReloadAssembly (47ms)
+	ReloadAssembly (1044ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (367ms)
-			LoadAssemblies (45ms)
+		EndReloadAssembly (421ms)
+			LoadAssemblies (49ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (146ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (144ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (164ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (33ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (68ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002152 seconds.
+Registered in 0.002452 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.947 seconds
+- Completed reload, in  1.026 seconds
 Domain Reload Profiling:
-	ReloadAssembly (948ms)
+	ReloadAssembly (1027ms)
 		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (756ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (834ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
+			SetupTypeCache (247ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (325ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (378ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (242ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (288ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,422 +109,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1416 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.3 MB.
-System memory in use after: 83.4 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1878.
-Total: 2.771300 ms (FindLiveObjects: 0.167600 ms CreateObjectMapping: 0.033800 ms MarkObjects: 2.453200 ms  DeleteObjects: 0.115700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 11/Concrete pattern 11.mat
-  artifactKey: Guid(39d9ac5066e1af74cadba0ad038e742b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 11/Concrete pattern 11.mat using Guid(39d9ac5066e1af74cadba0ad038e742b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252cd49f16e3a5cf6a92b995d67459a6') in 0.132688 seconds 
-  Import took 0.136509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/Concrete pattern 17.mat
-  artifactKey: Guid(573165ec89c0f4a488f962940dc8d6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/Concrete pattern 17.mat using Guid(573165ec89c0f4a488f962940dc8d6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f699322923e951b28d8f7b9560dc5b38') in 0.021453 seconds 
-  Import took 0.023767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 08/Concrete pattern 08.mat
-  artifactKey: Guid(ebf8b4d16b7f8924fb9116d2e3207836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 08/Concrete pattern 08.mat using Guid(ebf8b4d16b7f8924fb9116d2e3207836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6521e6a0ec4467ab1e69c79428bfd8e7') in 0.036041 seconds 
-  Import took 0.038465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 04/Concrete pattern 04.mat
-  artifactKey: Guid(46be5f15e363aac4381cc9eb6efc673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 04/Concrete pattern 04.mat using Guid(46be5f15e363aac4381cc9eb6efc673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9606527690f28ff6711c3da176c29173') in 0.038383 seconds 
-  Import took 0.041036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 20/Concrete pattern 20.mat
-  artifactKey: Guid(d9118644cf18d114abae307878884709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 20/Concrete pattern 20.mat using Guid(d9118644cf18d114abae307878884709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36b753570ec64328b416339b4ac2cdc') in 0.038107 seconds 
-  Import took 0.040531 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-2.mat
-  artifactKey: Guid(06cd72ceff92aab4d8cf86bb3216008e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-2.mat using Guid(06cd72ceff92aab4d8cf86bb3216008e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8029f0386323072baa4b7d8a2b2a2beb') in 0.013135 seconds 
-  Import took 0.015583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 02/Concrete pattern 02.mat
-  artifactKey: Guid(74c690b29deaf184eb0f56c386f5ef8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 02/Concrete pattern 02.mat using Guid(74c690b29deaf184eb0f56c386f5ef8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad619da3e65124df24469c6f6d92b35') in 0.034786 seconds 
-  Import took 0.038336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 19/Concrete pattern 19.mat
-  artifactKey: Guid(03df648f2a2e48843962ec5471b9e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 19/Concrete pattern 19.mat using Guid(03df648f2a2e48843962ec5471b9e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957144005cf78fc9aa84977013973296') in 0.036625 seconds 
-  Import took 0.039425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/airport_concrete-1.mat
-  artifactKey: Guid(957c90fba6629bc468679c7ec47127f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/MyAssets/Assets_FenceChained/models/Materials/airport_concrete-1.mat using Guid(957c90fba6629bc468679c7ec47127f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ad8ef136f14b28e38e7cff42e520b3') in 0.021892 seconds 
-  Import took 0.024594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete16_3.mat
-  artifactKey: Guid(ef09c7f754eca664aacc37e2f114b684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete16_3.mat using Guid(ef09c7f754eca664aacc37e2f114b684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c384d0a13742bbb1c7d5fe91d380e36') in 0.013213 seconds 
-  Import took 0.016783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 06/Concrete pattern 06.mat
-  artifactKey: Guid(8e53f458c50238748a0e25fbe049b465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 06/Concrete pattern 06.mat using Guid(8e53f458c50238748a0e25fbe049b465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c952106109a0e564e2b11cd844ac8678') in 0.036322 seconds 
-  Import took 0.038856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 07/Concrete pattern 07.mat
-  artifactKey: Guid(b1d36282b2c17c84fb2f618cba0439a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 07/Concrete pattern 07.mat using Guid(b1d36282b2c17c84fb2f618cba0439a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07b1b4fa8ef041b66cf094b7d2137ba') in 0.037153 seconds 
-  Import took 0.039799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 09/Concrete pattern 09.mat
-  artifactKey: Guid(90caba3031f3bb6489b26535a49cd81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 09/Concrete pattern 09.mat using Guid(90caba3031f3bb6489b26535a49cd81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1df7b87b1496a382fe3095c0d1cf2f') in 0.030781 seconds 
-  Import took 0.033157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 15/Concrete pattern 15.mat
-  artifactKey: Guid(6c096acbd65465b438d9b0a3d141cff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 15/Concrete pattern 15.mat using Guid(6c096acbd65465b438d9b0a3d141cff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfa0a887e63842b62d883250045902a') in 0.036423 seconds 
-  Import took 0.039455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 05/Concrete pattern 05.mat
-  artifactKey: Guid(04652004be933ba41b4ac32ddd7f5eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 05/Concrete pattern 05.mat using Guid(04652004be933ba41b4ac32ddd7f5eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db35c66abb5045017bf62019458a96a') in 0.034898 seconds 
-  Import took 0.037280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 01/Concrete pattern 01.mat
-  artifactKey: Guid(9447935ca27fed54c9c28112b77d5908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 01/Concrete pattern 01.mat using Guid(9447935ca27fed54c9c28112b77d5908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f76b2f0c078272692c874129accd9da') in 0.011768 seconds 
-  Import took 0.014181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete pattern 17.mat
-  artifactKey: Guid(7f76996d73748d444bfccd6826a55060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete pattern 17.mat using Guid(7f76996d73748d444bfccd6826a55060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8ea6a400ba00ccfa6b800e511a5849') in 0.012266 seconds 
-  Import took 0.015168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 14/Concrete pattern 14.mat
-  artifactKey: Guid(acbeb59509e47e942937ab47a0abc310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 14/Concrete pattern 14.mat using Guid(acbeb59509e47e942937ab47a0abc310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31be6b0397de5183f435699209f7984') in 0.034021 seconds 
-  Import took 0.036788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 10/Concrete pattern 10.mat
-  artifactKey: Guid(3ff803e95ede8de42a2adbcd1dd530d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 10/Concrete pattern 10.mat using Guid(3ff803e95ede8de42a2adbcd1dd530d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a32b240965af81fa64014258f209bdb') in 0.037103 seconds 
-  Import took 0.040049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 12/Concrete pattern 12.mat
-  artifactKey: Guid(90958dd685f590642806ebb68b473bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 12/Concrete pattern 12.mat using Guid(90958dd685f590642806ebb68b473bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fed4f51c13d1e1e2c6aa8d55d7af73') in 0.035451 seconds 
-  Import took 0.038234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 13/Concrete pattern 13.mat
-  artifactKey: Guid(0fc0bf58c56418e44b94d145ca6f5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 13/Concrete pattern 13.mat using Guid(0fc0bf58c56418e44b94d145ca6f5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668863823cd5f4b24389d92b726c5d04') in 0.034849 seconds 
-  Import took 0.037131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete16_2.mat
-  artifactKey: Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/Concrete16_2.mat using Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0fd2d47e375baab6d440862d56e182b') in 0.014156 seconds 
-  Import took 0.016885 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-5.mat
-  artifactKey: Guid(d530ed8e131f524419a851a7e457aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-5.mat using Guid(d530ed8e131f524419a851a7e457aaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f303d992284ea56e76ee31cf62b9ec8') in 0.012624 seconds 
-  Import took 0.015168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-4.mat
-  artifactKey: Guid(973184d11c3d3154dadafb18d83cfca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-4.mat using Guid(973184d11c3d3154dadafb18d83cfca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc1fb2c377c9d4e179b49cc037961b3') in 0.014813 seconds 
-  Import took 0.017374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack
-  artifactKey: Guid(1c45947289bd3174082accc7523e6e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack using Guid(1c45947289bd3174082accc7523e6e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5e733aedd655dea5c8d16505555dde') in 0.004867 seconds 
-  Import took 0.006762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete pattern 03.mat
-  artifactKey: Guid(52c9083b299dfa3479caa56bb9f0a98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete pattern 03.mat using Guid(52c9083b299dfa3479caa56bb9f0a98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d7335b3f8283622086ac6ea95ac81d') in 0.012600 seconds 
-  Import took 0.015181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack
-  artifactKey: Guid(1c45947289bd3174082accc7523e6e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack using Guid(1c45947289bd3174082accc7523e6e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5e733aedd655dea5c8d16505555dde') in 0.001540 seconds 
-  Import took 0.003790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/Concrete pattern 16.mat
-  artifactKey: Guid(edb56784830ff6e48bc903e1da5bc5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/Concrete pattern 16.mat using Guid(edb56784830ff6e48bc903e1da5bc5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2462772f110a64cb72546ea06d7238de') in 0.037809 seconds 
-  Import took 0.040612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-3.mat
-  artifactKey: Guid(cf2c180386cfbb64483ee008268bd009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 03/Concrete2-3.mat using Guid(cf2c180386cfbb64483ee008268bd009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64979410099845295c8605384b21ae08') in 0.013722 seconds 
-  Import took 0.016057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 18/Concrete pattern 18.mat
-  artifactKey: Guid(35b3905e878c7c14a804d8e50b2f37d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 18/Concrete pattern 18.mat using Guid(35b3905e878c7c14a804d8e50b2f37d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ed1b2bf27912ccee0ca360f24870d0') in 0.014946 seconds 
-  Import took 0.017182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.490828 seconds.
-  path: Assets/_Main/MyAssets/ModularFirstPersonController/FirstPersonController/FirstPersonController.prefab
-  artifactKey: Guid(6bacecc4f3df9584198879c73a6b6c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/MyAssets/ModularFirstPersonController/FirstPersonController/FirstPersonController.prefab using Guid(6bacecc4f3df9584198879c73a6b6c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91352432014da0ca0aa601d51faeb944') in 0.039985 seconds 
-  Import took 0.042708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.079614 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/diffuse.tga
-  artifactKey: Guid(43e7843d5e3a62f41a2ed8bd385747d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/diffuse.tga using Guid(43e7843d5e3a62f41a2ed8bd385747d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecab1086ea52ace1382a2b59d759490f') in 0.017892 seconds 
-  Import took 0.026366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/normal.tga
-  artifactKey: Guid(dac2a28fc94762d4ca44b2bc4684a2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/normal.tga using Guid(dac2a28fc94762d4ca44b2bc4684a2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7adcb6455f76ceafa2c373285e3b542') in 0.013465 seconds 
-  Import took 0.015860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/diffuse.tga
-  artifactKey: Guid(43e7843d5e3a62f41a2ed8bd385747d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/diffuse.tga using Guid(43e7843d5e3a62f41a2ed8bd385747d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecab1086ea52ace1382a2b59d759490f') in 0.009230 seconds 
-  Import took 0.011324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.037767 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/diffuse.tga
-  artifactKey: Guid(fd16008f462a0b746974440d3b751b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/diffuse.tga using Guid(fd16008f462a0b746974440d3b751b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650eeb98b67d4c130a94525d84dd8991') in 0.014797 seconds 
-  Import took 0.017390 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/normal.tga
-  artifactKey: Guid(7de3f241545f4454b9eeddd0482d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/normal.tga using Guid(7de3f241545f4454b9eeddd0482d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbb79a1b6df9603ea5046797526f2e1') in 0.012732 seconds 
-  Import took 0.015696 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/diffuse.tga
-  artifactKey: Guid(fd16008f462a0b746974440d3b751b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/diffuse.tga using Guid(fd16008f462a0b746974440d3b751b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650eeb98b67d4c130a94525d84dd8991') in 0.014038 seconds 
-  Import took 0.016432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/normal.tga
-  artifactKey: Guid(7de3f241545f4454b9eeddd0482d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 16/normal.tga using Guid(7de3f241545f4454b9eeddd0482d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbb79a1b6df9603ea5046797526f2e1') in 0.013022 seconds 
-  Import took 0.015127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.658759 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/diffuse.tga
-  artifactKey: Guid(680fce33f35c47e48bb1b4af4a7e5f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/diffuse.tga using Guid(680fce33f35c47e48bb1b4af4a7e5f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b9d164430fafde701dbee9a74ec8ba') in 0.009654 seconds 
-  Import took 0.017352 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/preview.jpg
-  artifactKey: Guid(4d63f79de72108949b9e1866f4a608f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/preview.jpg using Guid(4d63f79de72108949b9e1866f4a608f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766c35d595e6fcbea4c11f086d2e5e8b') in 0.039914 seconds 
-  Import took 0.043166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/normal.tga
-  artifactKey: Guid(6cf587d415d7efb4f822d12b79b66abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder/normal.tga using Guid(6cf587d415d7efb4f822d12b79b66abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae65d762bd25202846c44ef92d3fc97') in 0.009643 seconds 
-  Import took 0.012124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.927831 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/preview.jpg
-  artifactKey: Guid(aa7b5d03c68f6bd42a4fe089a643ee0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/preview.jpg using Guid(aa7b5d03c68f6bd42a4fe089a643ee0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8aeb046cd88d1ac181391244e611e22') in 0.008409 seconds 
-  Import took 0.016892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.391688 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder
-  artifactKey: Guid(ec929d5076775f04e88c1bbdead0b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/New Folder using Guid(ec929d5076775f04e88c1bbdead0b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ec76b84caef188598aadcc42a4891c') in 0.004824 seconds 
-  Import took 0.012318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.628177 seconds.
-  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete
-  artifactKey: Guid(ec929d5076775f04e88c1bbdead0b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete using Guid(ec929d5076775f04e88c1bbdead0b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc52be06a0d2ede68e906563cff07cf') in 0.006147 seconds 
-  Import took 0.009402 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002833 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
 Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.867 seconds
-Domain Reload Profiling:
-	ReloadAssembly (867ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (718ms)
-			LoadAssemblies (69ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (233ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (299ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (225ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1410 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.7 MB.
-System memory in use after: 86.8 MB.
+Unloading 1416 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.2 MB.
+System memory in use after: 85.3 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1925.
-Total: 2.808300 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.030400 ms MarkObjects: 2.600800 ms  DeleteObjects: 0.018500 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1886.
+Total: 3.256800 ms (FindLiveObjects: 0.254400 ms CreateObjectMapping: 0.033900 ms MarkObjects: 2.797600 ms  DeleteObjects: 0.169300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -538,10 +131,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 834.026028 seconds.
+  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_3.mat
+  artifactKey: Guid(ef09c7f754eca664aacc37e2f114b684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_3.mat using Guid(ef09c7f754eca664aacc37e2f114b684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c384d0a13742bbb1c7d5fe91d380e36') in 0.106305 seconds 
+  Import took 0.109332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete pattern 17.mat
+  artifactKey: Guid(7f76996d73748d444bfccd6826a55060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete pattern 17.mat using Guid(7f76996d73748d444bfccd6826a55060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8ea6a400ba00ccfa6b800e511a5849') in 0.017956 seconds 
+  Import took 0.021600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
   path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_2.mat
   artifactKey: Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_2.mat using Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23285edfed895ba31e091ca240e9773') in 0.056271 seconds 
-  Import took 0.059138 seconds .
+Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_2.mat using Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21238c4f2ab05d61c176948a3ddb76c3') in 0.025609 seconds 
+  Import took 0.045039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 224.868885 seconds.
+  path: Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_2.mat
+  artifactKey: Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Main/_Materials/Floor_mat/Concrete textures pack/pattern 17/MaterialConcrete/Concrete16_2.mat using Guid(e42f8f3732356d442bf3965826faeef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1cf235e1f856e5c93f7dc0068b3dbef') in 0.022947 seconds 
+  Import took 0.029657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.980027 seconds.
+  path: Assets/_Main/ToonSoldiers_demo
+  artifactKey: Guid(873d33b291a02224ab08c85fb485b34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Main/ToonSoldiers_demo using Guid(873d33b291a02224ab08c85fb485b34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67a2737556f345e6fd1f779f3db324b') in 0.005823 seconds 
+  Import took 0.022536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.478996 seconds.
+  path: Assets/_Main/_TerrainAutoUpgrade
+  artifactKey: Guid(9821f020d86ec6e4ebbc1f86a12257ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Main/_TerrainAutoUpgrade using Guid(9821f020d86ec6e4ebbc1f86a12257ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5048e84ebef33eb445737f411a6825ea') in 0.006365 seconds 
+  Import took 0.009656 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
