@@ -342,7 +342,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902741735703881195}
-  - {fileID: 3558883434339835392}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -608,16 +607,9 @@ MonoBehaviour:
   maxDistance: 40
   distanceRange: 1
   hookSpeed: 9
-  toGrapple:
-    serializedVersion: 2
-    m_Bits: 0
-  hook: {fileID: 902741735145732593}
   cameraTransform: {fileID: 902741735903777646}
-  player: {fileID: 902741735145732593}
-  check: 0
-  force: 0
-  forceMultiplier: 0
-  velocityForce: 0
+  playerTransform: {fileID: 0}
+  cooldown: 5
 --- !u!1 &902741735307954027
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +765,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902741735903777646}
+  - {fileID: 3558883434339835392}
   m_Father: {fileID: 902741735145732593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1280,13 +1273,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3558883434339835395}
-  m_LocalRotation: {x: -0.102596916, y: -0.037058577, z: 0.3376959, w: 0.9349129}
-  m_LocalPosition: {x: 0.29, y: 0.73, z: 0.544}
+  m_LocalRotation: {x: -0.102596916, y: -0.03705862, z: 0.3376959, w: 0.9349129}
+  m_LocalPosition: {x: 0.29000056, y: -0.01999998, z: 0.54400873}
   m_LocalScale: {x: 0.26802, y: 0.26802, z: 0.26802003}
   m_Children:
   - {fileID: 3558883434829380307}
   - {fileID: 3558883433643087231}
-  m_Father: {fileID: 902741735145732593}
+  m_Father: {fileID: 902741735703881195}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -9.602, y: -8.08, z: 40.4}
 --- !u!95 &3558883434339835393
@@ -1444,7 +1437,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 176
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

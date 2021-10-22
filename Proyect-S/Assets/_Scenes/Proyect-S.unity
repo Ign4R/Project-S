@@ -1503,6 +1503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoldierMelee
       objectReference: {fileID: 0}
+    - target: {fileID: 4331237751527144614, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
 --- !u!4 &197482215 stripped
@@ -2772,10 +2776,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 518059118, guid: 79f6f1c12f910d54d93efa073bd658e2, type: 3}
-      propertyPath: Priority
-      value: 176
-      objectReference: {fileID: 0}
     - target: {fileID: 902741735145732593, guid: 79f6f1c12f910d54d93efa073bd658e2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7738,7 +7738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211731931
 RectTransform:
   m_ObjectHideFlags: 0
