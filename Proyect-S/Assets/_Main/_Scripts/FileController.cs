@@ -14,7 +14,7 @@ public class FileController : MonoBehaviour
     {
         if (other.gameObject.tag == "Damageable")
         {
-            ScoreManager.Instance.AddScore();
+            GameManager.Instance.AddScore();
             Audio.PlayOneShot(collectableSFX, 1f);
             gameObject.SetActive(false);
         }

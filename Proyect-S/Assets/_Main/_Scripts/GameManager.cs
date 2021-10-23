@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class ScoreManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static GameManager Instance;
     private int scoreIncrease = 1;
     private int totalScore;
     private LifeController lifeController;
@@ -48,7 +48,7 @@ public class ScoreManager : MonoBehaviour
                 
             }
 
-            DisplayTime(timeValue);
+            DisplayTime(timeValue, timerText);
         }
 
         if(totalScore == filesQuantity)
@@ -70,7 +70,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private void DisplayTime(float timeToDisplay)
+    public void DisplayTime(float timeToDisplay, GameObject timerText)
     {
         if(timeToDisplay < 0)
         {
