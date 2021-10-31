@@ -5,6 +5,8 @@ using UnityEngine.UI;
 // ----- Low Poly FPS Pack Free Version -----
 public class HandgunScriptLPFP : MonoBehaviour {
 
+
+	public bool withoutKnife;
 	private bool withoutGun;
 	//Animator component attached to weapon
 	Animator anim;
@@ -183,6 +185,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 		///
 		withoutGun = true;
+		withoutKnife = true;
 	}
 
 	private void LateUpdate () {
@@ -203,7 +206,10 @@ public class HandgunScriptLPFP : MonoBehaviour {
 				initialSwayPosition, Time.deltaTime * swaySmoothValue);
 		}
 	}
-	
+
+
+
+
 	private void Update () {
 
 		if (Input.GetKeyDown(KeyCode.B))
@@ -213,6 +219,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			withoutGun = false;
 			anim.SetTrigger("Inspect");
 		}
+
+		
+
 			
 		//Aiming
 		//Toggle camera FOV when right click is held down
@@ -253,35 +262,35 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 		//Timescale settings
 		//Change timescale to normal when 1 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha1)) 
-		{
-			Time.timeScale = 1.0f;
-			timescaleText.text = "1.0";
-		}
-		//Change timescale to 50% when 2 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha2)) 
-		{
-			Time.timeScale = 0.5f;
-			timescaleText.text = "0.5";
-		}
-		//Change timescale to 25% when 3 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha3)) 
-		{
-			Time.timeScale = 0.25f;
-			timescaleText.text = "0.25";
-		}
-		//Change timescale to 10% when 4 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha4)) 
-		{
-			Time.timeScale = 0.1f;
-			timescaleText.text = "0.1";
-		}
-		//Pause game when 5 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha5)) 
-		{
-			Time.timeScale = 0.0f;
-			timescaleText.text = "0.0";
-		}
+		//if (Input.GetKeyDown (KeyCode.Alpha1)) 
+		//{
+		//	Time.timeScale = 1.0f;
+		//	timescaleText.text = "1.0";
+		//}
+		////Change timescale to 50% when 2 key is pressed
+		//if (Input.GetKeyDown (KeyCode.Alpha2)) 
+		//{
+		//	Time.timeScale = 0.5f;
+		//	timescaleText.text = "0.5";
+		//}
+		////Change timescale to 25% when 3 key is pressed
+		//if (Input.GetKeyDown (KeyCode.Alpha3)) 
+		//{
+		//	Time.timeScale = 0.25f;
+		//	timescaleText.text = "0.25";
+		//}
+		////Change timescale to 10% when 4 key is pressed
+		//if (Input.GetKeyDown (KeyCode.Alpha4)) 
+		//{
+		//	Time.timeScale = 0.1f;
+		//	timescaleText.text = "0.1";
+		//}
+		////Pause game when 5 key is pressed
+		//if (Input.GetKeyDown (KeyCode.Alpha5)) 
+		//{
+		//	Time.timeScale = 0.0f;
+		//	timescaleText.text = "0.0";
+		//}
 
 		//Set current ammo text from ammo int
 		currentAmmoText.text = currentAmmo.ToString ();
@@ -291,12 +300,12 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		AnimationCheck ();
 
 		//Play knife attack 1 animation when Q key is pressed
-		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting && !withoutGun) 
+		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting && !withoutKnife) 
 		{
 			anim.Play ("Knife Attack 1", 0, 0f);
 		}
 		//Play knife attack 2 animation when F key is pressed
-		if (Input.GetKeyDown(KeyCode.F) && !isInspecting && !withoutGun) 
+		if (Input.GetKeyDown(KeyCode.F) && !isInspecting && !withoutKnife) 
 		{
 			anim.Play ("Knife Attack 2", 0, 0f);
 		}

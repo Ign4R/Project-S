@@ -65,11 +65,11 @@ namespace FPSControllerLPFP
         private SmoothVelocity _velocityX;
         private SmoothVelocity _velocityZ;
         private bool _isGrounded;
-
         private readonly RaycastHit[] _groundCastResults = new RaycastHit[8];
         private readonly RaycastHit[] _wallCastResults = new RaycastHit[8];
-
         /// Initializes the FpsController on start.
+        /// 
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -377,4 +377,6 @@ namespace FPSControllerLPFP
             }
         }
     }
+    
+
 }

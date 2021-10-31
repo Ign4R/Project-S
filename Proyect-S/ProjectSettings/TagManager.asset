@@ -9,6 +9,7 @@ TagManager:
   - ExplosiveBarrel
   - Enemy
   - Damageable
+  - Knife
   layers:
   - Default
   - TransparentFX
