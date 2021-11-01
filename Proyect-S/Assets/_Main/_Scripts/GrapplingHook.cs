@@ -36,12 +36,12 @@ public class GrapplingHook : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && currentCooldown <= 0) 
+        if (Input.GetMouseButtonDown(1) && currentCooldown <= 0) 
         {
             currentCooldown = cooldown;
             StartGrapple();
         }
-        else if (Input.GetKeyUp(KeyCode.Z))
+        else if (Input.GetMouseButtonUp(1))
         {
             Physics.gravity = new Vector3(0f, -9.81f, 0f);
             rb.constraints = RigidbodyConstraints.None;

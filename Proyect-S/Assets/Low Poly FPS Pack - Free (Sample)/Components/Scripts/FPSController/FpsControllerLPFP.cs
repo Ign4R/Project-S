@@ -6,7 +6,6 @@ namespace FPSControllerLPFP
 {
     /// Manages a first person character
     [RequireComponent(typeof(Rigidbody))]
-    [RequireComponent(typeof(CapsuleCollider))]
     [RequireComponent(typeof(AudioSource))]
     public class FpsControllerLPFP : MonoBehaviour
     {

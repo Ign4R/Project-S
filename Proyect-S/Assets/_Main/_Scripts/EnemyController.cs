@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
     private LifeController lifeController;
     private EnemyAI enemyAI;
     private Animator anim;
+    private Collider coll;
+    private Rigidbody rb;
 
     ///---------------------STATS-------------------------------///
     [SerializeField] private float speed;
@@ -30,6 +32,12 @@ public class EnemyController : MonoBehaviour
     public AudioClip alertSFX;
     private AudioSource Audio;
 
+    /// <summary>
+    public AudioClip deathSFX;
+    private AudioSource audioSource;
+    private bool audioTrigger = false;
+    /// </summary>
+
     private void Awake()
     {
         enemyAI = GetComponent<EnemyAI>();
@@ -37,8 +45,10 @@ public class EnemyController : MonoBehaviour
         Audio = GetComponent<AudioSource>();
 
         lifeController = GetComponent<LifeController>();
-
+        audioSource=GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
+        coll= GetComponent<Collider>();
     }
     private void Start()
     {
@@ -46,6 +56,18 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
+        if (lifeController.CurrentHealth <= 0)
+        {
+            anim.SetTrigger("Death");
+            rb.isKinematic = true;
+            coll.enabled = false;
+
+            if (!audioTrigger)
+            {
+                audioSource.PlayOneShot(deathSFX, 0.1f);
+                audioTrigger = true;
+            }
+        }
 
         if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
         {

@@ -9,7 +9,6 @@ public class DamageableCollider : MonoBehaviour
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
-    public GameObject particle;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,8 @@ public class DamageableCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,21 +28,14 @@ public class DamageableCollider : MonoBehaviour
         {
            
             IDamageable damageable = other.GetComponent<LifeController>();
+          
             if (damageable != null)
             {
-                damageable.TakeDamage(damage);
                 _audio.PlayOneShot(backstab, 0.7f);
-                //particle.GetComponent<ParticleSystem>().Play();
-            }
-            else
-            {
-                _audio.PlayOneShot(wiff, 0.7f);
+                damageable.TakeDamage(damage);
+                
             }
         }
-        else
-        {
-            _audio.PlayOneShot(wiff, 0.7f);
-        }
+   
     }
-
 }
