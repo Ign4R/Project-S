@@ -2,23 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void SimpleDelegate();
+
 public class LifeController : MonoBehaviour, IDamageable
 {
-    public int CurrentHealth { get; private set; }
+    [SerializeField] private Animator anim;
+    public float CurrentHealth { get; private set; }
+    public AudioClip deathSFX;
+    [SerializeField] float healthRegen = 1f;
+    private float maxHealth;
+    private AudioSource Audio;
+    private bool AudioTrigger = false;
+    private Rigidbody rb;
+    private Collider coll;
+    public event SimpleDelegate OnHealthChange;
     void Start()
     {
-        CurrentHealth = 100;
+        maxHealth = 100;
+        CurrentHealth = maxHealth;
+        coll = GetComponent<Collider>();
+        Audio = GetComponent<AudioSource>();
+        rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
+        if (CurrentHealth < maxHealth)
+        {
+            CurrentHealth += healthRegen * Time.deltaTime;
+        }
+        if (CurrentHealth > maxHealth)
+        {
+            CurrentHealth = maxHealth;
+        }
 
     }
     public void TakeDamage(int damage)
     {
         CurrentHealth -= damage;
+        OnHealthChange?.Invoke();
         if (CurrentHealth <= 0)
-        {         
-            CurrentHealth = 0;               
+        {
+            coll.enabled = false;
+            CurrentHealth = 0;
+            anim.SetTrigger("Death");
+            rb.isKinematic = true;
+
+            if (!AudioTrigger)
+            {
+                Audio.PlayOneShot(deathSFX, 0.1f);
+                AudioTrigger = true;
+            }
+            //Destroy(gameObject);
+
         }
     }
 }
