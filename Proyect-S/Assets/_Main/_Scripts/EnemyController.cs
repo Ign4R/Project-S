@@ -18,6 +18,10 @@ public class EnemyController : MonoBehaviour
     private Animator anim;
     private Collider coll;
     private Rigidbody rb;
+    public AudioClip alertSFX;
+    private AudioSource Audio;
+    public AudioClip deathSFX;
+    public AudioClip attackSFX;
 
     ///---------------------STATS-------------------------------///
     [SerializeField] private float speed;
@@ -29,14 +33,6 @@ public class EnemyController : MonoBehaviour
     private float timerBetweenShoot;
     private float timerToShoot;
 
-    public AudioClip alertSFX;
-    private AudioSource Audio;
-
-    /// <summary>
-    public AudioClip deathSFX;
-    private AudioSource audioSource;
-    private bool audioTrigger = false;
-    /// </summary>
 
     private void Awake()
     {
@@ -45,7 +41,7 @@ public class EnemyController : MonoBehaviour
         Audio = GetComponent<AudioSource>();
 
         lifeController = GetComponent<LifeController>();
-        audioSource=GetComponent<AudioSource>();
+        lifeController.OnDeath += OnDeath;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         coll= GetComponent<Collider>();
@@ -61,12 +57,6 @@ public class EnemyController : MonoBehaviour
             anim.SetTrigger("Death");
             rb.isKinematic = true;
             coll.enabled = false;
-
-            if (!audioTrigger)
-            {
-                audioSource.PlayOneShot(deathSFX, 0.1f);
-                audioTrigger = true;
-            }
         }
 
         if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
@@ -114,6 +104,8 @@ public class EnemyController : MonoBehaviour
                     anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
+                    if (attackSFX != null)
+                        Audio.PlayOneShot(attackSFX, 0.2f);
                 }
                 if (timerToShoot <= 0)
                 {
@@ -134,5 +126,14 @@ public class EnemyController : MonoBehaviour
             timerToShoot -= Time.deltaTime;
         }
 
+    }
+
+    private void OnDeath()
+    {
+        if (!AudioTrigger)
+        {
+            Audio.PlayOneShot(deathSFX, 0.2f);
+            AudioTrigger = true;
+        }
     }
 }

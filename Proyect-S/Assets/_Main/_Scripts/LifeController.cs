@@ -8,20 +8,18 @@ public class LifeController : MonoBehaviour, IDamageable
 {
     [SerializeField] private Animator anim;
     public float CurrentHealth { get; private set; }
-    public AudioClip deathSFX;
     [SerializeField] float healthRegen = 1f;
     private float maxHealth;
-    private AudioSource Audio;
-    private bool AudioTrigger = false;
     private Rigidbody rb;
     private Collider coll;
+
+    public event SimpleDelegate OnDeath;
     public event SimpleDelegate OnHealthChange;
     void Start()
     {
         maxHealth = 100;
         CurrentHealth = maxHealth;
         coll = GetComponent<Collider>();
-        Audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
     void Update()
@@ -47,11 +45,7 @@ public class LifeController : MonoBehaviour, IDamageable
             anim.SetTrigger("Death");
             rb.isKinematic = true;
 
-            if (!AudioTrigger)
-            {
-                Audio.PlayOneShot(deathSFX, 0.1f);
-                AudioTrigger = true;
-            }
+            OnDeath?.Invoke();
             //Destroy(gameObject);
 
         }
