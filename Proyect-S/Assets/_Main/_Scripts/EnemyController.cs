@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
     private AudioSource Audio;
     public AudioClip deathSFX;
     public AudioClip attackSFX;
+    private ParticleSystem ShotParticles;
 
     ///---------------------STATS-------------------------------///
     [SerializeField] private float speed;
@@ -39,6 +40,7 @@ public class EnemyController : MonoBehaviour
         enemyAI = GetComponent<EnemyAI>();
 
         Audio = GetComponent<AudioSource>();
+        ShotParticles = GetComponentInChildren<ParticleSystem>();
 
         lifeController = GetComponent<LifeController>();
         lifeController.OnDeath += OnDeath;
@@ -104,6 +106,11 @@ public class EnemyController : MonoBehaviour
                     anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
+                    if(ShotParticles != null)
+                    {
+                        ShotParticles.Play();
+                    }
+
                     if (attackSFX != null)
                         Audio.PlayOneShot(attackSFX, 0.2f);
                 }
