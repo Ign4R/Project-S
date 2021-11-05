@@ -7,8 +7,10 @@ public delegate void SimpleDelegate();
 public class LifeController : MonoBehaviour, IDamageable
 {
     [SerializeField] private Animator anim;
-    public float CurrentHealth { get; private set; }
     [SerializeField] float healthRegen = 1f;
+    [SerializeField] private float cooldown;
+    public float CurrentHealth { get; private set; }
+    private float currentCooldown;
     private float maxHealth;
     private Rigidbody rb;
     private Collider coll;
@@ -24,7 +26,12 @@ public class LifeController : MonoBehaviour, IDamageable
     }
     void Update()
     {
-        if (CurrentHealth < maxHealth)
+        currentCooldown -= Time.deltaTime;
+        if(currentCooldown < 0)
+        {
+            currentCooldown = 0;
+        }
+        if (CurrentHealth < maxHealth && currentCooldown == 0)
         {
             CurrentHealth += healthRegen * Time.deltaTime;
         }
@@ -36,6 +43,7 @@ public class LifeController : MonoBehaviour, IDamageable
     }
     public void TakeDamage(int damage)
     {
+        currentCooldown = cooldown;
         CurrentHealth -= damage;
         OnHealthChange?.Invoke();
         if (CurrentHealth <= 0)
