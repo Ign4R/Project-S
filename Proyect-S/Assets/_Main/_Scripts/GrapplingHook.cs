@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GrapplingHook : MonoBehaviour
 {
     private LineRenderer hookLine;
     private Vector3 grapplePoint;
     private float currentDistance;
+    private float currentCooldown = 0;
+    private Rigidbody rb;
+    private bool check;
+    private bool onClick;
 
+    [SerializeField] private Image cooldownImage;
     [SerializeField] private float maxDistance = 40f;  
     [SerializeField] private float distanceRange;
     [SerializeField] private float hookSpeed;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float cooldown;
-
-    private float currentCooldown;
-    private Rigidbody rb;
-    private bool check;
 
     void Awake()
     {
@@ -28,21 +30,29 @@ public class GrapplingHook : MonoBehaviour
 
     void Update()
     {
-        if (currentCooldown >= 0)
+        cooldownImage.fillAmount = currentCooldown / cooldown;
+
+        if (currentCooldown < cooldown && onClick == false )
         {
-            currentCooldown -= Time.deltaTime;
+            currentCooldown += Time.deltaTime;
         }
+        if(currentCooldown > cooldown)
+        {
+            currentCooldown = cooldown;
+        }
+
     }
 
     private void LateUpdate()
     {
-        if (Input.GetMouseButtonDown(1) && currentCooldown <= 0) 
+        if (Input.GetMouseButtonDown(1) && currentCooldown == cooldown) 
         {
-            currentCooldown = cooldown;
+            onClick = true;
             StartGrapple();
         }
         else if (Input.GetMouseButtonUp(1))
         {
+            onClick = false;
             Physics.gravity = new Vector3(0f, -9.81f, 0f);
             rb.constraints = RigidbodyConstraints.None;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
@@ -72,6 +82,7 @@ public class GrapplingHook : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
         {
+            currentCooldown = 0;
             rb.velocity = Vector3.zero;
             check = true;
             grapplePoint = hit.point;
