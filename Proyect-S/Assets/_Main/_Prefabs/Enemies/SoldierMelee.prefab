@@ -779,9 +779,10 @@ MonoBehaviour:
   target: {fileID: 0}
   timerToShootSet: 1
   timerBetweenShootSet: 1
-  speed: 5
   alertSFX: {fileID: 8300000, guid: aecbf82096c422245a23eb30d5568336, type: 3}
   deathSFX: {fileID: 8300000, guid: 6f2d17cb846d23846ae25148900e7fc6, type: 3}
+  attackSFX: {fileID: 0}
+  speed: 5
 --- !u!82 &5613837755872987883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -987,8 +988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  deathSFX: {fileID: 0}
   healthRegen: 1
+  cooldown: 0
 --- !u!1 &4424613433567384062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,14 +1742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9000179614080501471}
     m_Modifications:
-    - target: {fileID: 2152162791432734414, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6817864869542716401, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
-      propertyPath: backstab
-      value: 
-      objectReference: {fileID: 8300000, guid: 1bb2f54ebba721440a511dba7f4f0e6d, type: 3}
     - target: {fileID: 8656897316375025510, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
       propertyPath: m_Name
       value: Knife
