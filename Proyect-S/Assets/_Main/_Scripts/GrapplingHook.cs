@@ -12,6 +12,7 @@ public class GrapplingHook : MonoBehaviour
     private Rigidbody rb;
     private bool check;
     private bool onClick;
+    private float hookDistance;
 
     [SerializeField] private Image cooldownImage;
     [SerializeField] private float maxDistance = 40f;  
@@ -64,7 +65,7 @@ public class GrapplingHook : MonoBehaviour
             currentDistance = Vector3.Distance(playerTransform.position, grapplePoint);
             if(currentDistance > distanceRange)
             {
-                transform.position = Vector3.MoveTowards(transform.position, grapplePoint, hookSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, grapplePoint, hookDistance *  currentDistance * hookSpeed * Time.deltaTime);
             }
             else
             {
@@ -87,6 +88,7 @@ public class GrapplingHook : MonoBehaviour
             check = true;
             grapplePoint = hit.point;
             hookLine.positionCount = 2;
+            hookDistance = Vector3.Distance(playerTransform.position, grapplePoint);
             Physics.gravity = Vector3.zero;
         }
 
