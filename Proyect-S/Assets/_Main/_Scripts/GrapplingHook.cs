@@ -13,11 +13,17 @@ public class GrapplingHook : MonoBehaviour
     private bool check;
     private bool onClick;
     private float hookDistance;
+    private float hookSpeed;
+    private float middleDistance;
+    private float closeDistance;
 
+    [SerializeField] private float farSpeed;
+    [SerializeField] private float middleSpeed;
+    [SerializeField] private float closeSpeed;    
+    [SerializeField] private Image hitMark;
     [SerializeField] private Image cooldownImage;
     [SerializeField] private float maxDistance = 40f;  
     [SerializeField] private float distanceRange;
-    [SerializeField] private float hookSpeed;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float cooldown;
@@ -28,7 +34,10 @@ public class GrapplingHook : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerTransform = GetComponent<Transform>();
     }
-
+    private void Start()
+    {
+        hookSpeed = farSpeed;
+    }
     void Update()
     {
         cooldownImage.fillAmount = currentCooldown / cooldown;
@@ -46,6 +55,16 @@ public class GrapplingHook : MonoBehaviour
 
     private void LateUpdate()
     {
+        RaycastHit hit;
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
+        {
+            hitMark.color = Color.green;
+        }
+        else
+        {
+            hitMark.color = Color.red;
+        }
+
         if (Input.GetMouseButtonDown(1) && currentCooldown == cooldown) 
         {
             onClick = true;
@@ -63,11 +82,22 @@ public class GrapplingHook : MonoBehaviour
         if (check == true)
         {
             currentDistance = Vector3.Distance(playerTransform.position, grapplePoint);
-            if(currentDistance > distanceRange)
+            middleDistance = hookDistance / 2;
+            closeDistance = hookDistance / 5;
+
+            if (currentDistance > distanceRange)
             {
-                transform.position = Vector3.MoveTowards(transform.position, grapplePoint, hookDistance *  currentDistance * hookSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, grapplePoint, hookSpeed * Time.deltaTime);
             }
-            else
+            if(currentDistance <= middleDistance && currentDistance > closeDistance)
+            {
+                hookSpeed = middleSpeed;
+            }
+            if(currentDistance <= closeDistance)
+            {
+                hookSpeed = closeSpeed;
+            }
+            else if(currentDistance <= distanceRange)
             {
                 rb.constraints = RigidbodyConstraints.FreezePosition;
                 
@@ -99,6 +129,7 @@ public class GrapplingHook : MonoBehaviour
     {
         hookLine.positionCount = 0;
         check = false;
+        hookSpeed = farSpeed;
 
     }
 
