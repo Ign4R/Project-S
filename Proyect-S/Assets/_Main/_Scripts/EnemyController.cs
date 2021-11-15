@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float timerBetweenShootSet;
 
     ///----------------ENEMY COMPONENTS-------------------------///
+    [SerializeField] private GameObject visionCone;
     private LifeController lifeController;
     private EnemyAI enemyAI;
     private Animator anim;
@@ -59,6 +60,8 @@ public class EnemyController : MonoBehaviour
             anim.SetTrigger("Death");
             rb.isKinematic = true;
             coll.enabled = false;
+            visionCone.SetActive(false);
+
         }
 
         if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
