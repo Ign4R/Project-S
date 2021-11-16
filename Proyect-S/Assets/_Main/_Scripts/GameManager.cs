@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int filesQuantity;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bloodEffect;
+    [SerializeField] private GameObject reinforcements;
 
     private void Awake()
     {
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
             misionCheckmark.SetActive(true);
             misionText.SetActive(true);
             timerText.SetActive(true);
+            reinforcements.SetActive(true);
 
         }
 
