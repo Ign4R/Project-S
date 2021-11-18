@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private int scoreIncrease = 1;
     private int totalScore;
     private LifeController lifeController;
+    private LastMission lastMission;
     private bool starTimer;
     [SerializeField] private Texture health100;
     [SerializeField] private Texture health70;
@@ -19,17 +20,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject scoreText;
     [SerializeField] private GameObject timerText;
     [SerializeField] private GameObject misionText;
-    [SerializeField] private float timeValue = 90;
+    [SerializeField] private float timeValue = 60;
     [SerializeField] private int filesQuantity;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bloodEffect;
     [SerializeField] private GameObject reinforcements;
+    [SerializeField] private GameObject finalMission;
+    [SerializeField] private GameObject sabotageMissionText;
 
     private void Awake()
     {
         Instance = this;
         lifeController = player.GetComponent<LifeController>();
+        lastMission = finalMission.GetComponent<LastMission>();
         lifeController.OnHealthChange += OnHit;
+        lastMission.OnObjective += FinalMission;
         scoreText.GetComponent<Text>().text = $"{totalScore}/{filesQuantity}";
     }
 
@@ -58,16 +63,13 @@ public class GameManager : MonoBehaviour
             DisplayTime(timeValue, timerText);
         }
 
-        if (totalScore == filesQuantity)
+        if (totalScore == filesQuantity && !starTimer)
         {
-            starTimer = true;
             infoText.SetActive(false);
             filesText.SetActive(false);
             scoreText.SetActive(false);
-            misionCheckmark.SetActive(true);
-            misionText.SetActive(true);
-            timerText.SetActive(true);
-            reinforcements.SetActive(true);
+            finalMission.SetActive(true);
+            sabotageMissionText.SetActive(true);
 
         }
 
@@ -127,5 +129,19 @@ public class GameManager : MonoBehaviour
     public void PlayAnimation()
     {
         bloodEffect.GetComponent<Animator>().Play("Hit Fadeout");
+    }
+
+    public void FinalMission()
+    {
+        if (!starTimer) 
+        {
+            starTimer = true;
+            finalMission.SetActive(false);
+            sabotageMissionText.SetActive(false);
+            misionCheckmark.SetActive(true);
+            misionText.SetActive(true);
+            timerText.SetActive(true);
+            reinforcements.SetActive(true);
+        }
     }
 }
