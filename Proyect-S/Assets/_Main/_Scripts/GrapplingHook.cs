@@ -57,7 +57,7 @@ public class GrapplingHook : MonoBehaviour
     private void LateUpdate()
     {
         RaycastHit hit;
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance) && hit.distance > hookMinRange)
         {
             hitMark.color = Color.green;
         }
