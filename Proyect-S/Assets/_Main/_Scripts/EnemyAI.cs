@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] private float rangeAlert = 10;
     [SerializeField] private int damage;
     [SerializeField] private float shootY;
     [SerializeField] private float range = 10;
@@ -13,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     private Vector3 shootPosition;    
     public LayerMask mask;
     public LayerMask targetMask;
+    public LayerMask maskAlert;
     //Implementar
     private void Start()
     {
@@ -33,6 +35,20 @@ public class EnemyAI : MonoBehaviour
 
         return true;
     }
+
+    public void Alert(Transform transform, Collider collider)
+    {
+
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, rangeAlert, maskAlert);
+        for (int i = 0; i < hitColliders.Length; i++)
+        {
+            if (hitColliders[i] == collider) continue;
+            Collider enemies = hitColliders[i];
+            enemies.GetComponent<EnemyController>().Chase = true;           
+            enemies.GetComponent<EnemyController>().OverlapLock = true;           
+        }       
+    }
+
 
     public bool IsInMinimalDistance(Transform target)
     {

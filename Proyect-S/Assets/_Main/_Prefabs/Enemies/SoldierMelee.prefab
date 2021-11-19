@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6508309184296917178}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3116541768397946901}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Clavicle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3443589260643251609}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9000179614080501471}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hand_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638135983459929195}
   - component: {fileID: 5384905532670253241}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GermanSoldier_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1191340004172966548}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680648468819861583}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Toe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 779232434929863363}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5044222984111461883}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Clavicle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8104646645304853801}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Forearm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908588821058271726}
   - component: {fileID: 817746284621956885}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GermanSoldier_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5154356132869723488}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2606649521539179876}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1347419280135723848}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hand_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731115147841533674}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SoldierRig_German
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd013699addb3b41b89d1b4a428a89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeAlert: 60
   damage: 8
   shootY: 1
   range: 25
@@ -765,6 +766,9 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 64
+  maskAlert:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &197482218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,6 +789,8 @@ MonoBehaviour:
   deathSFX: {fileID: 8300000, guid: 6f2d17cb846d23846ae25148900e7fc6, type: 3}
   attackSFX: {fileID: 0}
   speed: 5
+  chase: 0
+  overlapLock: 0
 --- !u!82 &5613837755872987883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -989,8 +995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5d67901094cb4e81087b972889083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  healthRegen: 1
+  anim: {fileID: 4331237751527144614}
+  healthRegen: 0
   cooldown: 0
 --- !u!1 &4424613433567384062
 GameObject:
@@ -1001,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581880165055007383}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Thigh_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1359111756396062324}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Calf_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3159894730365007033}
   - component: {fileID: 7095396383865893414}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GermanSoldier_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7146012977950818304}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Toe_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019428015027433476}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Calf_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8679916746153800300}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Thigh_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7156149816887243163}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Toe_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7412863513913661073}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: UpperArm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2970215654181731513}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Toe_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1352,7 +1358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6764009249834574091}
   - component: {fileID: 8693510520842219055}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GermanSoldier_LOD4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,7 +1461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114918351648482718}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Forearm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1487,7 +1493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8608676650176443317}
   - component: {fileID: 5599887399629026498}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GermanSoldier_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6622750951914678365}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: UpperArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866118288438839676}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3550013700751777346}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8719407608064653340}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1715,7 +1721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3333643704617419474}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1747,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 8656897316375025510, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
       propertyPath: m_Name
       value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656897316375025510, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8656897316375448390, guid: d0c74fde4c9928447b150165a7d9ab29, type: 3}
       propertyPath: m_RootOrder
