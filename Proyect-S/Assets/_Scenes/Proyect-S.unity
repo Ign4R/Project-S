@@ -13643,7 +13643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: farSpeed
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: hookSpeed
@@ -13651,7 +13651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: closeSpeed
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: maxDistance
@@ -13659,7 +13659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: middleSpeed
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: hookMinRange
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: closeDistance
