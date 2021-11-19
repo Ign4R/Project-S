@@ -154,6 +154,7 @@ public class EnemyController : MonoBehaviour
         }
         else if (!enemyAI.IsInSight(target) && !Chase)
         {
+            visionCone.SetActive(true);
             anim.SetBool("Walk", false);
             shootState = false;
         }
