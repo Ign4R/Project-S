@@ -31,10 +31,16 @@ public class EnemyController : MonoBehaviour
     ///---------------------BOOLS------------------------------///
     private bool shootState;
     private bool AudioTrigger = false;
+    [SerializeField] private bool chase;
+    [SerializeField] private bool overlapLock;
+    public bool Chase { get => chase; set => chase = value; }
+    public bool OverlapLock { get => overlapLock; set => overlapLock = value; }
+
     /// 
     private float timerBetweenShoot;
     private float timerToShoot;
 
+ 
 
     private void Awake()
     {
@@ -63,10 +69,30 @@ public class EnemyController : MonoBehaviour
             visionCone.SetActive(false);
 
         }
-
-        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0)
+        if (Chase)
         {
-           
+            Vector3 dir = target.position - transform.position;
+            dir.y = 0;
+            transform.rotation = Quaternion.LookRotation(dir);
+            anim.SetBool("Walk", true);
+            transform.position += transform.forward * speed * Time.deltaTime;
+
+        }
+        else
+        {
+            anim.SetBool("Walk", false);
+        }
+
+        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0 )
+        {
+            visionCone.SetActive(false);
+            Chase = false;
+            if (!OverlapLock)
+            {
+                enemyAI.Alert(transform, coll);
+                overlapLock = true;
+            }
+
 
             if (!AudioTrigger)
             {
@@ -126,7 +152,7 @@ public class EnemyController : MonoBehaviour
             }
             #endregion
         }
-        else if (!enemyAI.IsInSight(target))
+        else if (!enemyAI.IsInSight(target) && !Chase)
         {
             anim.SetBool("Walk", false);
             shootState = false;
