@@ -113,6 +113,12 @@ public class GrapplingHook : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
         {
+            if (hit.distance < 4)
+            {
+                StopGrapple();
+                return;
+            }
+
             currentCooldown = 0;
             rb.velocity = Vector3.zero;
             check = true;
