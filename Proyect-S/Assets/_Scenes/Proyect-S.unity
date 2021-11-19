@@ -15381,6 +15381,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: hookMinRange
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: closeDistance
       value: 8
       objectReference: {fileID: 0}

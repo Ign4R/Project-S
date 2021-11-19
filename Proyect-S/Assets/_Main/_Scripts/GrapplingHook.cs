@@ -22,7 +22,8 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private float closeSpeed;    
     [SerializeField] private Image hitMark;
     [SerializeField] private Image cooldownImage;
-    [SerializeField] private float maxDistance = 40f;  
+    [SerializeField] private float maxDistance = 40f;
+    [SerializeField] private float hookMinRange;
     [SerializeField] private float distanceRange;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform playerTransform;
@@ -113,7 +114,7 @@ public class GrapplingHook : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, maxDistance))
         {
-            if (hit.distance < 4)
+            if (hit.distance < hookMinRange)
             {
                 StopGrapple();
                 return;
