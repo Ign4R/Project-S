@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject reinforcements;
     [SerializeField] private GameObject finalMission;
     [SerializeField] private GameObject sabotageMissionText;
+    [SerializeField] private GameObject sabotageMissionEffects;
 
     private void Awake()
     {
@@ -138,6 +139,7 @@ public class GameManager : MonoBehaviour
             starTimer = true;
             finalMission.SetActive(false);
             sabotageMissionText.SetActive(false);
+            sabotageMissionEffects.SetActive(true);
             misionCheckmark.SetActive(true);
             misionText.SetActive(true);
             timerText.SetActive(true);
