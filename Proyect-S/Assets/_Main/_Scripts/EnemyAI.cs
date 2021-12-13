@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     }
     private void Update()
     {
-        shootPosition = new Vector3(transform.position.x, shootY, transform.position.z);
+        shootPosition = new Vector3(transform.position.x, transform.position.y + shootY, transform.position.z);
     }
     public bool IsInSight(Transform target)
     {

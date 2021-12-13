@@ -63,6 +63,7 @@ public class EnemyController : MonoBehaviour
     {
         if (lifeController.CurrentHealth <= 0)
         {
+            print("death enemy");
             anim.SetTrigger("Death");
             rb.isKinematic = true;
             coll.enabled = false;
@@ -152,7 +153,7 @@ public class EnemyController : MonoBehaviour
             }
             #endregion
         }
-        else if (!enemyAI.IsInSight(target) && !Chase)
+        else if (!enemyAI.IsInSight(target) && !Chase && lifeController.CurrentHealth > 0)
         {
             visionCone.SetActive(true);
             anim.SetBool("Walk", false);
@@ -167,10 +168,13 @@ public class EnemyController : MonoBehaviour
 
     private void OnDeath()
     {
-        if (!AudioTrigger)
-        {
-            Audio.PlayOneShot(deathSFX, 0.2f);
-            AudioTrigger = true;
-        }
+        Audio.PlayOneShot(deathSFX, 0.2f);
+        AudioTrigger = true;
+        //if (!AudioTrigger)
+        //{
+           
+          
+
+        //}
     }
 }
