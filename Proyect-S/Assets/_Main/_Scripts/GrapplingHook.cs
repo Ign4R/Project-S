@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GrapplingHook : MonoBehaviour
 {
-    private LineRenderer hookLine;
+    //private LineRenderer hookLine;
     private Vector3 grapplePoint;
     private float currentDistance;
     private float currentCooldown = 0;
@@ -17,6 +17,7 @@ public class GrapplingHook : MonoBehaviour
     private float middleDistance;
     private float closeDistance;
 
+    
     [SerializeField] private float farSpeed;
     [SerializeField] private float middleSpeed;
     [SerializeField] private float closeSpeed;    
@@ -29,9 +30,11 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float cooldown;
 
+    public bool Check => this.check;
+
     void Awake()
     {
-        hookLine = GetComponent<LineRenderer>();
+        //hookLine = GetComponent<LineRenderer>();
         rb = GetComponent<Rigidbody>();
         playerTransform = GetComponent<Transform>();
     }
@@ -105,7 +108,7 @@ public class GrapplingHook : MonoBehaviour
             }
 
         }
-        DrawRope();
+        //DrawRope();
     }
 
     void StartGrapple()
@@ -124,27 +127,34 @@ public class GrapplingHook : MonoBehaviour
             rb.velocity = Vector3.zero;
             check = true;
             grapplePoint = hit.point;
-            hookLine.positionCount = 2;
+            //hookLine.positionCount = 2;
             hookDistance = Vector3.Distance(playerTransform.position, grapplePoint);
             Physics.gravity = Vector3.zero;
         }
 
     }
 
+    public Vector3 GetGrapplePoint()
+    {
+        if (grapplePoint == null)
+            return Vector3.zero;
+        else
+            return grapplePoint;
+    }
 
     void StopGrapple()
     {
-        hookLine.positionCount = 0;
+        //hookLine.positionCount = 0;
         check = false;
         hookSpeed = farSpeed;
 
     }
 
-    void DrawRope()
-    {
-        if (check == false) return;
-        hookLine.SetPosition(index: 0, playerTransform.position);
-        hookLine.SetPosition(index: 1, grapplePoint);
+    //void DrawRope()
+    //{
+    //    if (check == false) return;
+    //    hookLine.SetPosition(index: 0, playerTransform.position);
+    //    hookLine.SetPosition(index: 1, grapplePoint);
 
-    }
+    //}
 }

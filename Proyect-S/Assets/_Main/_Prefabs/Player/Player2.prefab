@@ -665,6 +665,36 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1595310099232136152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6846004612814158683}
+  m_Layer: 6
+  m_Name: HookTip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6846004612814158683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595310099232136152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1857604257066322840}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860141228370931290
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,7 +12102,6 @@ MonoBehaviour:
     m_Bits: 128
   wiff: {fileID: 0}
   backstab: {fileID: 0}
-  particle: {fileID: 0}
 --- !u!65 &288631750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12552,6 +12581,7 @@ GameObject:
   - component: {fileID: 1797377069145806214}
   - component: {fileID: 1747917774023478520}
   - component: {fileID: 1512290819}
+  - component: {fileID: 3441062921689621032}
   - component: {fileID: 5057599722269641122}
   - component: {fileID: 412137255}
   - component: {fileID: 412137256}
@@ -12574,6 +12604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1862405854579817834}
+  - {fileID: 6846004612814158683}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12746,12 +12777,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb18c4c37c6c1b44b965d11bb0e78cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farSpeed: 0
+  middleSpeed: 0
+  closeSpeed: 0
+  hitMark: {fileID: 0}
+  cooldownImage: {fileID: 0}
   maxDistance: 40
+  hookMinRange: 0
   distanceRange: 1
-  hookSpeed: 15
   cameraTransform: {fileID: 1857604257066322840}
   playerTransform: {fileID: 0}
   cooldown: 0
+--- !u!114 &3441062921689621032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860862976554723454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d54cccb7b5fcd42b22e054c5821a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grapplingHook: {fileID: 0}
+  quality: 0
+  damper: 0
+  stregth: 0
+  velocity: 0
+  waveCount: 0
+  waveHeight: 0
+  affectCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!120 &5057599722269641122
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -12876,6 +12937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5d67901094cb4e81087b972889083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  healthRegen: 1
+  cooldown: 0
 --- !u!1 &1860912134135963230
 GameObject:
   m_ObjectHideFlags: 0
