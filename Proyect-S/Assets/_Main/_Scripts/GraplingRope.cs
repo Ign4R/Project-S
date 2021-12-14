@@ -9,7 +9,7 @@ public class GraplingRope : MonoBehaviour
     private Vector3 currentGrapplePosition;
     private Vector3 grapplePoint;
 
-
+    [SerializeField] private float lineSpeed;
     [SerializeField] private GrapplingHook grapplingHook;
     [SerializeField] private GameObject hookTip;
     [SerializeField] private int quality;
@@ -37,7 +37,7 @@ public class GraplingRope : MonoBehaviour
     {
         if (grapplingHook.Check== false)
         {
-            grapplePoint = grapplingHook.transform.position;
+            currentGrapplePosition = hookTip.transform.position;
             spring.Reset();
             if (hookLine.positionCount > 0)
             {
@@ -60,14 +60,14 @@ public class GraplingRope : MonoBehaviour
 
         grapplePoint = grapplingHook.GetGrapplePoint();
         var grappleOut = hookTip.transform.position;
-        var up = Quaternion.LookRotation(grapplePoint - grappleOut.normalized) * Vector3.up;
+        var up = Quaternion.LookRotation((grapplePoint - grappleOut).normalized) * Vector3.up;
 
-        currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 12f);
+        currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * lineSpeed);
 
-        for (int i = 0; i < quality +1; i++)
+        for (var i = 0; i < quality +1; i++)
         {
             var delta = i / (float) quality;
-            var offset = up * waveHeight * Mathf.Sin(delta * waveCount * Mathf.PI * spring.Value * affectCurve.Evaluate(delta));
+            var offset = up * waveHeight * Mathf.Sin(delta * waveCount * Mathf.PI) * spring.Value * affectCurve.Evaluate(delta);
             hookLine.SetPosition(i, Vector3.Lerp(grappleOut, currentGrapplePosition, delta) + offset);
         }
 
