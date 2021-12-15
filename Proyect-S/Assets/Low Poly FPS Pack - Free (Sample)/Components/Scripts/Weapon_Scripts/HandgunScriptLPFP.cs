@@ -210,19 +210,10 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 
 
-	private void Update () {
+	private void Update () 
+	{
 
-		if (Input.GetKeyDown(KeyCode.B))
-        {
-			mainAudioSource.clip = SoundClips.takeOutSound;
-			mainAudioSource.Play();
-			withoutGun = false;
-			anim.SetTrigger("Inspect");
-		}
-
-		
-
-			
+	
 		//Aiming
 		//Toggle camera FOV when right click is held down
 		if(Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting && !holstered && !withoutGun) 
