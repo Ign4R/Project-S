@@ -1798,13 +1798,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163369610}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.70421875, y: 0.6838156, z: -0.10162697, w: 0.16169167}
   m_LocalPosition: {x: -329.8, y: 55.29, z: 147.24}
   m_LocalScale: {x: 1.3879464, y: 1.9920256, z: 1.9969035}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: -174.909, y: -21.450989, z: 89.281}
 --- !u!65 &163369612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6435,6 +6435,7 @@ MonoBehaviour:
   knife: {fileID: 163369610}
   cam: {fileID: 962224348}
   position: {fileID: 481960881}
+  power: 1500
 --- !u!114 &412137258 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}

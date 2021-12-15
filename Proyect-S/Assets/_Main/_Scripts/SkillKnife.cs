@@ -8,6 +8,7 @@ public class SkillKnife : MonoBehaviour
     Rigidbody rb;
     public GameObject cam;
     public Transform position;
+    [SerializeField] private int power;
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class SkillKnife : MonoBehaviour
     {
         knife.transform.position = position.transform.position;
         knife.GetComponent<Rigidbody>().isKinematic = false;
-        knife.GetComponent<Rigidbody>().AddForce(cam.transform.forward * 1000);
+        knife.GetComponent<Rigidbody>().AddForce(cam.transform.forward * power);
 
     }
 }
