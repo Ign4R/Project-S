@@ -11,13 +11,18 @@ public class DesertorZone : MonoBehaviour
     public GameObject message;
     private float secondsLeft = 10;
     public float SecondsLeft;
+    [SerializeField] private LayerMask _hittableMask;
 
     private void OnTriggerEnter(Collider other)
     {
-        SecondsLeft = secondsLeft;
-        DesertorImage.SetActive(true);
-        timerTextSeconds.SetActive(true);
-        message.SetActive(true);
+        if ((_hittableMask & 1 << other.gameObject.layer) != 0)
+        {
+            SecondsLeft = secondsLeft;
+            DesertorImage.SetActive(true);
+            timerTextSeconds.SetActive(true);
+            message.SetActive(true);
+        }
+        
     }
 
     private void Update()
