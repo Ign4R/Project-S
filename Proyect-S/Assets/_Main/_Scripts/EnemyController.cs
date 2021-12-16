@@ -70,6 +70,7 @@ public class EnemyController : MonoBehaviour
             visionCone.SetActive(false);
 
         }
+
         if (Chase)
         {
             Vector3 dir = target.position - transform.position;

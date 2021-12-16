@@ -20,7 +20,7 @@ public class SkillKnife : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            knife.transform.rotation = Quaternion.LookRotation(transform.forward);
+            knife.transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.right);
             knife.GetComponent<Rigidbody>().isKinematic = true;
             Throw();
         }
