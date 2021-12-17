@@ -46874,7 +46874,7 @@ PrefabInstance:
       objectReference: {fileID: 305624146}
     - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
       propertyPath: filesQuantity
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
       propertyPath: reinforcements
