@@ -315,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -1169,7 +1169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -1200,7 +1200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -3178,7 +3178,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -4360,7 +4360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: damage
@@ -7553,7 +7553,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -7907,7 +7907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -8515,7 +8515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -10960,7 +10960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -11105,7 +11105,7 @@ PrefabInstance:
       objectReference: {fileID: 412137261}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
@@ -12318,7 +12318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -13225,7 +13225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -13483,7 +13483,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -15322,7 +15322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: damage
@@ -16131,7 +16131,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -16383,7 +16383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -17145,7 +17145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -18207,7 +18207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -19881,7 +19881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -20360,7 +20360,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -21979,6 +21979,14 @@ PrefabInstance:
       propertyPath: healthRegen
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4950521894814505055, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
+      propertyPath: m_FieldOfView
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950521894814505055, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
+      propertyPath: m_FarClipPlane
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5276168947026105875, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: m_Name
       value: Soldier2 (22)
@@ -22097,7 +22105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -26937,7 +26945,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -27939,7 +27947,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -30896,7 +30904,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -31019,7 +31027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: damage
@@ -32716,7 +32724,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -34829,7 +34837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -35306,7 +35314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -35504,7 +35512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -39599,7 +39607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: damage
@@ -40653,7 +40661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -40984,7 +40992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -41450,7 +41458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -42711,7 +42719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -44047,7 +44055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -44565,7 +44573,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -45054,7 +45062,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 197482217, guid: edb4fbfa81ec2f9459752c97642357a0, type: 3}
       propertyPath: damage
@@ -46512,7 +46520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9158303924687543834, guid: f301762e7a47b2548b2f63a7e8f41d88, type: 3}
       propertyPath: damage
@@ -47028,7 +47036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1083136290863282039, guid: a759df314a4771e45a5d972af51cd428, type: 3}
       propertyPath: damage
@@ -48349,7 +48357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3019558475611806204, guid: 17bb623c5200cf242b994cdb00142a84, type: 3}
       propertyPath: angle
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3207703803528402570, guid: 17bb623c5200cf242b994cdb00142a84, type: 3}
       propertyPath: target
