@@ -12,22 +12,15 @@ public class Inventory : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        print("0");
-        if (other.gameObject.tag == "Knife")
+        if (collision.gameObject.tag == "Knife")
         {
-            Destroy(other.gameObject);
+            print("LO HIZE");
+            collision.gameObject.SetActive(false);
             uiKnife.SetActive(true);
             handgunScript.withoutKnife = false;
         }
-
-
-    }
-
-    void Update()
-    {
-        
     }
 }

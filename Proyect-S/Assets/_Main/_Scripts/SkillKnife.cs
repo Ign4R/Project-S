@@ -9,17 +9,19 @@ public class SkillKnife : MonoBehaviour
     public GameObject cam;
     public Transform position;
     [SerializeField] private int power;
+    private HandgunScriptLPFP handgunScript;
 
     private void Start()
     {
+        handgunScript = GetComponentInChildren<HandgunScriptLPFP>();
         rb = GetComponent<Rigidbody>();
     }
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
+        
+        if (Input.GetKeyDown(KeyCode.F) && !handgunScript.withoutKnife)
+        {         
             knife.transform.rotation = Quaternion.LookRotation(transform.forward, Vector3.right);
             knife.GetComponent<Rigidbody>().isKinematic = true;
             Throw();
@@ -29,6 +31,8 @@ public class SkillKnife : MonoBehaviour
 
     void Throw()
     {
+        knife.SetActive(true);
+        handgunScript.withoutKnife = true;
         knife.transform.position = position.transform.position;
         knife.GetComponent<Rigidbody>().isKinematic = false;
         knife.GetComponent<Rigidbody>().AddForce(cam.transform.forward * power);

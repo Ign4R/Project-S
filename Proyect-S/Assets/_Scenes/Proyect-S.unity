@@ -2047,7 +2047,7 @@ GameObject:
   - component: {fileID: 163369615}
   - component: {fileID: 163369614}
   - component: {fileID: 163369616}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Knife
   m_TagString: Knife
   m_Icon: {fileID: 0}
@@ -2063,7 +2063,7 @@ Transform:
   m_GameObject: {fileID: 163369610}
   m_LocalRotation: {x: -0.47096097, y: 0.46732116, z: 0.5270025, w: 0.53110737}
   m_LocalPosition: {x: -329.8, y: 55.29, z: 147.24}
-  m_LocalScale: {x: 1.3879464, y: 1.9920256, z: 1.9969035}
+  m_LocalScale: {x: 1.3879464, y: 1.9920256, z: 1.9969032}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2100,7 +2100,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 08d1d3b36e6a0c940b127896029ecbca, type: 2}
+  - {fileID: 2100000, guid: 74d08154e3c06904885508593044a6e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2158,9 +2158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f8d25327465b749addd5fba063b575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hittableMask:
+  _rotateMask:
     serializedVersion: 2
     m_Bits: 64
+  _hittableMask:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 150
 --- !u!1 &169989824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7907,7 +7911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481960881}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PositionSpawnKnife
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14790,6 +14794,10 @@ PrefabInstance:
       value: CajaKnife
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: efc01039d5a6700419d97921726284be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: efc01039d5a6700419d97921726284be, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -14811,15 +14819,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: efc01039d5a6700419d97921726284be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04888916
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: efc01039d5a6700419d97921726284be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.513
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: efc01039d5a6700419d97921726284be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.38215637
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: efc01039d5a6700419d97921726284be, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23457,7 +23465,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1213586098}
   - component: {fileID: 1213586095}
-  - component: {fileID: 1213586096}
   m_Layer: 0
   m_Name: Knife
   m_TagString: Knife
@@ -23473,73 +23480,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213586094}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.96193236}
   m_Center: {x: 0, y: 0, z: 0.019033117}
---- !u!108 &1213586096
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213586094}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.91136396, g: 1, b: 0.39999998, a: 1}
-  m_Intensity: 0.37
-  m_Range: 7.56
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!4 &1213586098
 Transform:
   m_ObjectHideFlags: 0
@@ -23548,7 +23493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213586094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.028076172, y: 0.57, z: 0.0051574707}
+  m_LocalPosition: {x: -1.02, y: 0.57, z: -1.03}
   m_LocalScale: {x: 0.69445723, y: 1, z: 0.69619226}
   m_Children:
   - {fileID: 730758588}
@@ -35801,7 +35746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577656827}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.09, y: 1.919, z: 0.493}
+  m_LocalPosition: {x: -0.09, y: 1.65, z: -0.19}
   m_LocalScale: {x: 1.4399735, y: 1, z: 1.4363849}
   m_Children: []
   m_Father: {fileID: 1213586098}
@@ -35818,10 +35763,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9262098, g: 1, b: 0.654902, a: 1}
-  m_Intensity: 11.18
+  m_Color: {r: 0.16740832, g: 0.32656318, b: 0.6226415, a: 1}
+  m_Intensity: 39.3
   m_Range: 3.3407636
-  m_SpotAngle: 24.543377
+  m_SpotAngle: 153.09276
   m_InnerSpotAngle: 9.85704
   m_CookieSize: 10
   m_Shadows:
@@ -37991,7 +37936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: hookMinRange
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1512290819, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: cooldownImage
@@ -38001,6 +37946,22 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 2082978681}
+    - target: {fileID: 1744001690930996022, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: m_Radius
+      value: 0.09712724
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744001690930996022, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: m_Center.x
+      value: 1.301427e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744001690930996022, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: m_Center.y
+      value: -0.703743
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744001690930996022, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
+      propertyPath: m_Center.z
+      value: -0.20287281
+      objectReference: {fileID: 0}
     - target: {fileID: 1747917774023478520, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: runningSpeed
       value: 11
@@ -38727,7 +38688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3441062921689621032, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: lineSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3441062921689621032, guid: cad0ad56b0d36f94ab4d8e2aa1b92fbe, type: 3}
       propertyPath: m_Enabled
@@ -48345,6 +48306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1213586098}
     m_Modifications:
+    - target: {fileID: 7443415500853984180, guid: 09c000b0a07086a458088146bff83110, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74d08154e3c06904885508593044a6e5, type: 2}
     - target: {fileID: 7443415500856173940, guid: 09c000b0a07086a458088146bff83110, type: 3}
       propertyPath: m_Name
       value: knifemesh
