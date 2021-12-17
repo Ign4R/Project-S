@@ -17,7 +17,6 @@ public class Inventory : MonoBehaviour
     {
         if (collision.gameObject.tag == "Knife")
         {
-            print("LO HIZE");
             collision.gameObject.SetActive(false);
             uiKnife.SetActive(true);
             handgunScript.withoutKnife = false;

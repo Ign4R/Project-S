@@ -16,7 +16,6 @@ public class Knife : MonoBehaviour
     }
     void Update()
     {
-        print(canRotate);
         if (canRotate)
             transform.Rotate(Vector3.right, 500 * Time.deltaTime);
     }
