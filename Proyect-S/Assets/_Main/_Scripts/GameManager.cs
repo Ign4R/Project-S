@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public event System.Action OnStartOfLastMission;
     private int scoreIncrease = 1;
     private int totalScore;
     private LifeController lifeController;
@@ -134,8 +135,9 @@ public class GameManager : MonoBehaviour
 
     public void FinalMission()
     {
-        if (!starTimer) 
+        if (!starTimer)
         {
+            OnStartOfLastMission?.Invoke();
             starTimer = true;
             finalMission.SetActive(false);
             sabotageMissionText.SetActive(false);

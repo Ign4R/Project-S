@@ -44,7 +44,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (hitColliders[i] == collider) continue;
             Collider enemies = hitColliders[i];
-            enemies.GetComponent<EnemyController>().Chase = true;           
+            enemies.GetComponent<EnemyController>().Follow = true;           
             enemies.GetComponent<EnemyController>().OverlapLock = true;           
         }       
     }

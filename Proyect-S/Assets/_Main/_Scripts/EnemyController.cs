@@ -33,14 +33,17 @@ public class EnemyController : MonoBehaviour
     private bool AudioTrigger = false;
     [SerializeField] private bool chase;
     [SerializeField] private bool overlapLock;
+
+    [SerializeField] private bool follow;
     public bool Chase { get => chase; set => chase = value; }
     public bool OverlapLock { get => overlapLock; set => overlapLock = value; }
+    public bool Follow { get => follow; set => follow = value; }
 
     /// 
     private float timerBetweenShoot;
     private float timerToShoot;
 
- 
+
 
     private void Awake()
     {
@@ -51,16 +54,18 @@ public class EnemyController : MonoBehaviour
 
         lifeController = GetComponent<LifeController>();
         lifeController.OnDeath += OnDeath;
+
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        coll= GetComponent<Collider>();
+        coll = GetComponent<Collider>();
     }
     private void Start()
     {
-        
+        GameManager.Instance.OnStartOfLastMission += OnLastMission;
     }
     void Update()
     {
+
         if (lifeController.CurrentHealth <= 0)
         {
             print("death enemy");
@@ -71,7 +76,7 @@ public class EnemyController : MonoBehaviour
 
         }
 
-        if (Chase)
+        if (Follow && lifeController.CurrentHealth > 0)
         {
             Vector3 dir = target.position - transform.position;
             dir.y = 0;
@@ -85,10 +90,10 @@ public class EnemyController : MonoBehaviour
             anim.SetBool("Walk", false);
         }
 
-        if (enemyAI.IsInSight(target) && lifeController.CurrentHealth > 0 )
+        if ((enemyAI.IsInSight(target) || Chase) && lifeController.CurrentHealth > 0)
         {
+            Follow = false;
             visionCone.SetActive(false);
-            Chase = false;
             if (!OverlapLock)
             {
                 enemyAI.Alert(transform, coll);
@@ -110,8 +115,9 @@ public class EnemyController : MonoBehaviour
 
                 if (!enemyAI.IsInMinimalDistance(target))
                 {
-                    
+
                     anim.SetBool("Walk", true);
+                    //CHASE
                     transform.position += transform.forward * speed * Time.deltaTime;
                 }
                 else
@@ -137,7 +143,7 @@ public class EnemyController : MonoBehaviour
                     anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
-                    if(ShotParticles != null)
+                    if (ShotParticles != null)
                     {
                         ShotParticles.Play();
                     }
@@ -154,8 +160,9 @@ public class EnemyController : MonoBehaviour
             }
             #endregion
         }
-        else if (!enemyAI.IsInSight(target) && !Chase && lifeController.CurrentHealth > 0)
+        else if (!enemyAI.IsInSight(target) && !Follow && lifeController.CurrentHealth > 0)
         {
+
             visionCone.SetActive(true);
             anim.SetBool("Walk", false);
             shootState = false;
@@ -173,9 +180,15 @@ public class EnemyController : MonoBehaviour
         AudioTrigger = true;
         //if (!AudioTrigger)
         //{
-           
-          
+
+
 
         //}
+    }
+
+    private void OnLastMission()
+    {
+        Chase = true;
+        visionCone.SetActive(false);
     }
 }
