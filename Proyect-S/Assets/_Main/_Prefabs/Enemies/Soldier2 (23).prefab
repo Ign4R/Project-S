@@ -974,6 +974,7 @@ MonoBehaviour:
   speed: 8
   chase: 0
   overlapLock: 0
+  follow: 0
 --- !u!114 &3019558475611806204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,7 +992,7 @@ MonoBehaviour:
   shootY: 1
   range: 20
   minimalRange: 6
-  angle: 130
+  angle: 160
   mask:
     serializedVersion: 2
     m_Bits: 128

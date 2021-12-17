@@ -9,7 +9,7 @@ public class DamageableCollider : MonoBehaviour
     public AudioClip wiff;
     public AudioClip backstab;
     private AudioSource _audio;
-    // Start is called before the first frame update
+
     void Start()
     {
         _audio = GetComponent<AudioSource>();
@@ -19,22 +19,34 @@ public class DamageableCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+     
 
     }
     private void OnTriggerEnter(Collider other)
     {
+     
         if ((_hittableMask & 1 << other.gameObject.layer) != 0)
         {
            
             IDamageable damageable = other.GetComponent<LifeController>();
-          
+            EnemyController enemyController = other.GetComponent<EnemyController>();
+
             if (damageable != null)
             {
+
                 _audio.PlayOneShot(backstab, 0.7f);
-                damageable.TakeDamage(damage);
-                
+                if (!enemyController.IsInVision)
+                {
+                    print("Instakill");
+                    damageable.TakeDamage(damage);
+                }
+                else
+                {
+                    print("NO Instakill");
+                    damageable.TakeDamage(50);
+                }
             }
+
         }
    
     }

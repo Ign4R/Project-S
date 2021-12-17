@@ -12800,7 +12800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d54cccb7b5fcd42b22e054c5821a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineSpeed: 0
   grapplingHook: {fileID: 0}
+  hookTip: {fileID: 0}
   quality: 0
   damper: 0
   stregth: 0

@@ -33,11 +33,14 @@ public class EnemyController : MonoBehaviour
     private bool AudioTrigger = false;
     [SerializeField] private bool chase;
     [SerializeField] private bool overlapLock;
+    private bool isInVision;
 
     [SerializeField] private bool follow;
     public bool Chase { get => chase; set => chase = value; }
     public bool OverlapLock { get => overlapLock; set => overlapLock = value; }
     public bool Follow { get => follow; set => follow = value; }
+    public Animator Anim { get => anim; set => anim = value; }
+    public bool IsInVision { get => isInVision; set => isInVision = value; }
 
     /// 
     private float timerBetweenShoot;
@@ -55,7 +58,7 @@ public class EnemyController : MonoBehaviour
         lifeController = GetComponent<LifeController>();
         lifeController.OnDeath += OnDeath;
 
-        anim = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<Collider>();
     }
@@ -65,11 +68,12 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
+        //print(isInVision);
 
         if (lifeController.CurrentHealth <= 0)
         {
             print("death enemy");
-            anim.SetTrigger("Death");
+            Anim.SetTrigger("Death");
             rb.isKinematic = true;
             coll.enabled = false;
             visionCone.SetActive(false);
@@ -81,17 +85,18 @@ public class EnemyController : MonoBehaviour
             Vector3 dir = target.position - transform.position;
             dir.y = 0;
             transform.rotation = Quaternion.LookRotation(dir);
-            anim.SetBool("Walk", true);
+            Anim.SetBool("Walk", true);
             transform.position += transform.forward * speed * Time.deltaTime;
 
         }
         else
         {
-            anim.SetBool("Walk", false);
+            Anim.SetBool("Walk", false);
         }
 
         if ((enemyAI.IsInSight(target) || Chase) && lifeController.CurrentHealth > 0)
         {
+            IsInVision = true;
             Follow = false;
             visionCone.SetActive(false);
             if (!OverlapLock)
@@ -116,18 +121,18 @@ public class EnemyController : MonoBehaviour
                 if (!enemyAI.IsInMinimalDistance(target))
                 {
 
-                    anim.SetBool("Walk", true);
+                    Anim.SetBool("Walk", true);
                     //CHASE
                     transform.position += transform.forward * speed * Time.deltaTime;
                 }
                 else
                 {
-                    anim.SetBool("Walk", false);
+                    Anim.SetBool("Walk", false);
                 }
             }
             else
             {
-                anim.SetBool("Walk", false);
+                Anim.SetBool("Walk", false);
             }
 
             #region Timer
@@ -140,7 +145,7 @@ public class EnemyController : MonoBehaviour
 
                 if (!shootState && enemyAI.IsInSight(target))
                 {
-                    anim.SetTrigger("Shoot");
+                    Anim.SetTrigger("Shoot");
                     timerToShoot = timerToShootSet;
                     shootState = true;
                     if (ShotParticles != null)
@@ -162,9 +167,10 @@ public class EnemyController : MonoBehaviour
         }
         else if (!enemyAI.IsInSight(target) && !Follow && lifeController.CurrentHealth > 0)
         {
-
+            
+            isInVision = false;
             visionCone.SetActive(true);
-            anim.SetBool("Walk", false);
+            Anim.SetBool("Walk", false);
             shootState = false;
         }
         if (timerToShoot > 0)

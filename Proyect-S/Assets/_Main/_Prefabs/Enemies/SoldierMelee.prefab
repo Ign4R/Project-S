@@ -759,7 +759,7 @@ MonoBehaviour:
   shootY: 1
   range: 25
   minimalRange: 2
-  angle: 120
+  angle: 150
   mask:
     serializedVersion: 2
     m_Bits: 128
@@ -791,6 +791,7 @@ MonoBehaviour:
   speed: 5
   chase: 0
   overlapLock: 0
+  follow: 0
 --- !u!82 &5613837755872987883
 AudioSource:
   m_ObjectHideFlags: 0
