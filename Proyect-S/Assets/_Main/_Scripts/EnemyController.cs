@@ -101,7 +101,7 @@ public class EnemyController : MonoBehaviour
             }
 
 
-            if (!AudioTrigger)
+            if (!AudioTrigger && !Chase)
             {
                 Audio.PlayOneShot(alertSFX, 0.3f);
                 AudioTrigger = true;
