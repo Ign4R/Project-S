@@ -46866,9 +46866,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1159869402}
     - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
+      propertyPath: seconsLeft
+      value: 
+      objectReference: {fileID: 8300000, guid: 200043b220af9904baa17402288d410e, type: 3}
+    - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
       propertyPath: bloodEffect
       value: 
       objectReference: {fileID: 1105366830}
+    - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
+      propertyPath: ambientMusic
+      value: 
+      objectReference: {fileID: 169989825}
     - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
       propertyPath: finalMission
       value: 
@@ -46885,6 +46893,10 @@ PrefabInstance:
       propertyPath: misionCheckmark
       value: 
       objectReference: {fileID: 1168907109}
+    - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
+      propertyPath: finalMisionMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: ca64a4d4725db1f4180abcd4e53327d6, type: 3}
     - target: {fileID: 2519802328928135967, guid: 3be43ae2a01f3e84aba42f6027e6a414, type: 3}
       propertyPath: sabotageMissionText
       value: 

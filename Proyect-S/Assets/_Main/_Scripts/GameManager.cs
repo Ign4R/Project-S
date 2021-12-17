@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private LifeController lifeController;
     private LastMission lastMission;
     private bool starTimer;
+    private bool changedMusic;
     [SerializeField] private Texture health100;
     [SerializeField] private Texture health70;
     [SerializeField] private Texture health45;
@@ -29,6 +30,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject finalMission;
     [SerializeField] private GameObject sabotageMissionText;
     [SerializeField] private GameObject sabotageMissionEffects;
+    [SerializeField] private AudioSource ambientMusic;
+    [SerializeField] private AudioClip seconsLeft;
+    [SerializeField] private AudioClip finalMisionMusic;
 
     private void Awake()
     {
@@ -53,6 +57,14 @@ public class GameManager : MonoBehaviour
             if (timeValue <= 30)
             {
                 timerText.GetComponent<Text>().color = Color.red;
+            }
+
+
+            if (timeValue <= 11 && changedMusic == false)
+            {
+                ambientMusic.clip = seconsLeft;
+                ambientMusic.Play();
+                changedMusic = true;
             }
 
             if (timeValue <= 0)
@@ -139,6 +151,8 @@ public class GameManager : MonoBehaviour
         {
             OnStartOfLastMission?.Invoke();
             starTimer = true;
+            ambientMusic.clip = finalMisionMusic;
+            ambientMusic.Play();
             finalMission.SetActive(false);
             sabotageMissionText.SetActive(false);
             sabotageMissionEffects.SetActive(true);
